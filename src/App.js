@@ -1,25 +1,39 @@
 import logo from './logo.svg';
 import './App.css';
 
+import { createContext, useEffect, useState } from 'react';
+import { createHashRouter, RouterProvider } from 'react-router-dom';
+import Home from './component/Home/Home';
+export const WebContext = createContext();
+
 function App() {
+  const [dataJson, setDataJson] = useState(null);
+  const fetchJson = async () => {
+    const res = await fetch('/db.json')
+    const jsonRes = await res.json();
+    // console.log(jsonRes);
+    setDataJson(jsonRes);
+  }
+
+  useEffect(() => {
+    fetchJson();
+  }, []);
+  const router = createHashRouter([
+    
+    { path: "", element: <Home /> },
+
+
+  ]);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <WebContext.Provider value={dataJson}>
+      <div className="App" data-testid="AppWrapper">
+        <RouterProvider router={router} />
+      </div>
+    </WebContext.Provider>
   );
 }
+
+
 
 export default App;
