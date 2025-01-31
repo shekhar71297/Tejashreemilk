@@ -1,10 +1,14 @@
 import React from 'react'
-import NavBar from '../../common/NavBar/NavBar'
+// import NavBar from '../../common/NavBar/NavBar'
+import Landing from '../landingPage/Landing'
+import Contact from '../ContactUs/Contact'
 
 function Home() {
   return (
     <div>
-      <NavBar/>
+      {/* <NavBar/> */}
+      <Landing/>
+      <Contact/>
     </div>
   )
 }

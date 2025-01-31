@@ -1,0 +1,77 @@
+.nav-info {
+    display: flex;
+    justify-content: space-around;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    flex-wrap: wrap;
+}
+
+.logo-img {
+    width: 10%;
+    height: 10%;
+}
+
+.icon-customization {
+    font-size: 4em;
+    color: #ff1d1d;
+    margin: 0.5rem;
+    
+}
+
+.contact-details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     
+}
+
+.mail-details {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.mail {
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+    flex-wrap: wrap;
+}
+
+/* Styles for screens less than 768px */
+@media (max-width: 767px) {
+    .nav-info {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .mail {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+    }
+  
+    .contact-details {
+      flex-direction: row;
+      align-items: center;
+       
+    }
+  
+    .icon-customization {
+      margin-right: 10px;
+    }
+  
+    .mail-details {
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+    }
+
+    .logo-img {
+        width: 30%;
+        height: 30%;
+        margin-bottom: 10px;
+    }
+  }
+  

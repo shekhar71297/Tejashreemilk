@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+ 
 import './App.css';
 
 import { createContext, useEffect, useState } from 'react';
@@ -21,6 +21,7 @@ function App() {
   const router = createHashRouter([
     
     { path: "", element: <Home /> },
+ 
 
 
   ]);
