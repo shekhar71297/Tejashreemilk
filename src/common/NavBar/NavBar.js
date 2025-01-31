@@ -15,7 +15,7 @@ function NavBar() {
             <Navbar.Brand key={index}>
               <div>
                 <Link to='/'>
-                  <Image src={val.logoImgurl} alt={val.id} style={{ maxHeight: '70px', maxWidth: '190px' }} />
+                  <Image src={val.logoImgurl} alt={val.id} style={{ maxHeight: '190px', maxWidth: '190px' }} />
                 </Link>
               </div>
             </Navbar.Brand>
