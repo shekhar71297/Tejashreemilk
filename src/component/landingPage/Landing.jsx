@@ -22,7 +22,7 @@ function Landing() {
           <span>abhi@gmail.com</span>
         </div>
       </div>
-      <div className="contact-details">
+      <div className="contact-details"> 
         <BiPhoneCall className='icon-customization'/>
         <div className="mail-details">
           <span>Send your mail</span>

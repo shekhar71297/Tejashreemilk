@@ -4,5 +4,70 @@
       "id": 1,
       "logoImgurl": "/images/NavBar/logo.png"
     }
-  ]
+  ],
+  "footer": {
+    "sloganheading": {
+      "title": "ABOUT US"
+    },
+    "slogan": "Hematite Infotech Pvt. Ltd, represents the highest level of competence and expertise in delivering technology training along with application development through multiple learning methodologies worldwide.",
+    "social": [
+      {
+        "name": "Instagram",
+        "link": "https://www.instagram.com/hematite_infotech?igsh=ZDE3OTNnNzdjNnl4",
+        "icon": "FaInstagram"
+      },
+      {
+        "name": "LinkedIn",
+        "link": "https://www.linkedin.com/company/hematite-infotech-pvt-ltd/mycompany/",
+        "icon": "FaLinkedinIn"
+      },
+      {
+        "name": "Facebook",
+        "link": "https://www.facebook.com/hematiteinfotech/",
+        "icon": "FaFacebookF"
+      },
+      {
+        "name": "WhatsApp",
+        "link": "https://wa.link/he878r",
+        "icon": "IoLogoWhatsapp"
+      },
+      {
+        "name": "YouTube",
+        "link": "http://www.youtube.com/@hematiteinfotech1569",
+        "icon": "FaYoutube"
+      }
+    ],
+    "siteMap": {
+      "title": "SITE MAP",
+      "items": [
+        {
+          "name": "Home",
+          "link": "/"
+        },
+        {
+          "name": "About",
+          "link": "/about-us"
+        },
+        {
+          "name": "Services",
+          "link": "/services"
+        },
+        {
+          "name": "Courses",
+          "link": "/courses"
+        },
+        {
+          "name": "Contact",
+          "link": "/contact"
+        }
+      ]
+    },
+    "headOffice": {
+      "title": "HEAD OFFICE",
+      "address": "2nd Floor, Mathura Nagar Housing Society, Near Janseva Sahakari Bank Chandan Nagar, Kharadi, Pune - 411014.",
+      "email": "contact@hematitecorp.com",
+      "phone": "+91 - 8263926309 / 8999639478"
+    },
+    "subheading": "Web Design & Development by Hematite Infotech Pvt. Ltd."
+  }
 }
