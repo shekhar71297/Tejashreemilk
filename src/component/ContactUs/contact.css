@@ -1,6 +1,6 @@
 .contact-bg {
     position: relative;
-    height: 30vh; /* Set the height to 30% of the viewport height */
+    height: 35vh;  
   }
   
   .contact-bg img {
@@ -49,5 +49,116 @@
 
   /* contact form  */
   .contact-container{
-    margin-top:5rem ;
+     
+    display: flex;
+    justify-content: center;
+     
+    width: 80% !important;
+    margin-top: 5rem !important;
+    margin-bottom: 5rem;
+
+  }
+  .contactUs-icon{
+    color: rgb(248, 192, 89);
+    font-size: 2rem;
+    margin-right: 0.6rem;
+  }
+  .contact-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+  .left-form{
+    margin-right: 2rem;
+    width: 50%;
+  }
+ .left-form h1{
+  font-size: 2.7;
+  font-weight: 700;
+ }
+.contactUs-details{
+  margin: 1rem 0rem;
+}
+.contactUs-details .icon-details{
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+.contactUs-icon-name{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contactUs-left-des{
+  margin: 2rem 0rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+/* right side */
+.right-form{
+  margin-left: 1rem;
+}
+.right-container {
+  max-width: 600px;
+  margin: 0 auto;
+ 
+}
+.right-container h1{
+font-size: 2.7rem;
+font-weight: 700;
+}
+.right-container p{
+  margin: 1rem 0rem 2rem 0rem;
+}
+.right-form form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.right-form .form-group {
+    flex: 1 1 100%;
+}
+.right-form .form-group.half {
+    flex: 1 1 calc(50% - 20px);
+}
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+.right-form input, textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: #ececec;
+}
+.right-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #5ba2ef;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+button:hover {
+    background-color: #0056b3;
+}
+@media (max-width: 600px) {
+    .form-group.half {
+        flex: 1 1 100%;
+    }
+    .contact-container{
+      flex-direction: column;
+    }
+    .left-form{
+      width: 100%;
+    }
+  }
+  .right-form{
+    margin-left: 0rem;
   }

@@ -4,6 +4,7 @@ import './App.css';
 import { createContext, useEffect, useState } from 'react';
 import { createHashRouter, RouterProvider } from 'react-router-dom';
 import Home from './component/Home/Home';
+import AboutUs from './component/About/AboutUs';
 export const WebContext = createContext();
 
 function App() {
@@ -21,8 +22,7 @@ function App() {
   const router = createHashRouter([
     
     { path: "", element: <Home /> },
- 
-
+    { path: "/aboutUs", element: <AboutUs /> },
 
   ]);
 

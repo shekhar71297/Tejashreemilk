@@ -5,6 +5,8 @@ import { CgMail } from "react-icons/cg";
 import { BiPhoneCall } from "react-icons/bi";
 import { SlLocationPin } from "react-icons/sl";
 import "./contact.css";
+import FooterPage from '../../common/footer/FooterPage'
+ 
 
 function Contact() {
   return (
@@ -24,71 +26,80 @@ function Contact() {
       <Container className="contact-container">
         <div className="left-form">
           <span>For more Information</span>
-          <h1>Lets Talk</h1>
+          <h1>Hey, Lets Talk</h1>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, error!
           </p>
           <div className="contact-form">
+
           <div className="contactUs-details">
-            <CgMail className="icon-customization" />
-              <span>Send your mail</span>
+            <div className="contactUs-icon-name">
+            <SlLocationPin className="contactUs-icon" />
+              <span className="icon-details">Our Location</span>
+              </div>
+            <div className="mail-info">
+              <span >abhi@gmail.com</span>
+            </div>
+          </div>
+
+          <div className="contactUs-details">
+          <div className="contactUs-icon-name">
+            <CgMail className="contactUs-icon" />
+              <span className="icon-details">Email Support</span>
+              </div>
             <div className="mail-info">
               <span>abhi@gmail.com</span>
             </div>
           </div>
 
           <div className="contactUs-details">
-            <CgMail className="icon-customization" />
-              <span>Send your mail</span>
+          <div className="contactUs-icon-name">
+            <BiPhoneCall className="contactUs-icon" />
+              <span className="icon-details">Phone Number</span>
+              </div>
             <div className="mail-info">
               <span>abhi@gmail.com</span>
             </div>
           </div> 
 
-          <div className="contactUs-details">
-            <CgMail className="icon-customization" />
-              <span>Send your mail</span>
-            <div className="mail-info">
-              <span>abhi@gmail.com</span>
-            </div>
-          </div>
+          
           </div>
           <hr />
-          <h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi impedit vel alias fugit?</h3>
+          <p className="contactUs-left-des">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi impedit vel alias fugit?</p>
         </div>
         <div className="right-form">
 
-    <div class="container">
+        <div className="right-container">
         <h1>Send Us A Message</h1>
         <p>Please fill out the form below and our expert team will get back to you shortly.</p>
         <form>
-            <div class="form-group">
-                <label for="first-name">First Name *</label>
-                <input type="text" id="first-name" name="first-name" placeholder="First name here" required/>
+            <div className="form-group half">
+                <label htmlFor="first-name">First Name *</label>
+                <input type="text" id="first-name" required placeholder="First name here"/>
             </div>
-            <div class="form-group">
-                <label for="last-name">Last Name *</label>
-                <input type="text" id="last-name" name="last-name" placeholder="Last name here" required/>
+            <div className="form-group half">
+                <label htmlFor="last-name">Last Name *</label>
+                <input type="text" id="last-name" required placeholder="Second name here"/>
             </div>
-            <div class="form-group">
-                <label for="email">Email Address *</label>
-                <input type="email" id="email" name="email" placeholder="Add email" required/>
+            <div className="form-group half">
+                <label htmlFor="email">Email Address *</label>
+                <input type="email" id="email" required placeholder="Add email"/>
             </div>
-            <div class="form-group">
-                <label for="subject">Subject *</label>
-                <input type="text" id="subject" name="subject" placeholder="How can we help you?" required/>
+            <div className="form-group half">
+                <label htmlFor="subject">Subject *</label>
+                <input type="text" id="subject" required placeholder="How can we help you?"/>
             </div>
-            <div class="form-group">
-                <label for="comments">Comments / Questions *</label>
-                <textarea id="comments" name="comments" placeholder="Comments" required></textarea>
+            <div className="form-group">
+                <label htmlFor="comments">Comments / Questions *</label>
+                <textarea id="comments" rows="5" required placeholder="Comments"></textarea>
             </div>
-            <div class="form-group">
-                <input type="submit" value="Send Message"/>
-            </div>
+            <button type="submit">Send Message</button>
         </form>
     </div>
+    
         </div>
       </Container>
+       <FooterPage/>
     </div>
   );
 }
