@@ -5,81 +5,258 @@
       "logoImgurl": "/images/NavBar/logo.png"
     }
   ],
-  
+
   "home": [
     {
       "id": 1,
       "logoImgurl": "/images/home/bg-home.jpg"
     }
   ],
-  "product":[{
-    "id":1,
-    "imgUrl":"/images/home/product1.png",
-    "heading":"Fresh Milk",
-    "content":"Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    "price":"22"
-  },
-  {
-    "id":2,
-    "imgUrl":"/images/home/product1.png",
-    "heading":"Fresh Milk",
-    "content":"Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    "price":"22"
-  },
-  {
-    "id":3,
-    "imgUrl":"/images/home/product1.png",
-    "heading":"Fresh Milk",
-    "content":"Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    "price":"22"
-  },
-  {
-    "id":4,
-    "imgUrl":"/images/home/product1.png",
-    "heading":"Fresh Milk",
-    "content":"Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    "price":"22"
-  }
-],
-"about":[
-  {
-    "id":1,
-    "imgUrl":"/images/about/farm.jpg",
-    "subheading":"Our Advantages",
-    "heading":"Unleash the Magic of Farm-Crafted Dairy",
-    "content":"Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-  }
-],
-  "homevideo":[
+  "product": [
     {
       "id": 1,
-      "subtitle":"Farm Perfect Dairy",
-      "heading":"Welcome to our Dairy Paradise",
-      "content":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.",
-      "videoUrl":"/images/home/video/farm_video.mp4"
+      "imgUrl": "/images/home/product1.png",
+      "heading": "Fresh Milk",
+      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "price": "22"
+    },
+    {
+      "id": 2,
+      "imgUrl": "/images/home/product1.png",
+      "heading": "Fresh Milk",
+      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "price": "22"
+    },
+    {
+      "id": 3,
+      "imgUrl": "/images/home/product1.png",
+      "heading": "Fresh Milk",
+      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "price": "22"
+    },
+    {
+      "id": 4,
+      "imgUrl": "/images/home/product1.png",
+      "heading": "Fresh Milk",
+      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "price": "22"
+    }
+  ],
+  "about": [
+    {
+      "id": 1,
+      "imgUrl": "/images/about/farm.jpg",
+      "subheading": "Our Advantages",
+      "heading": "Unleash the Magic of Farm-Crafted Dairy",
+      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    }
+  ],
+  "homevideo": [
+    {
+      "id": 1,
+      "subtitle": "Farm Perfect Dairy",
+      "heading": "Welcome to our Dairy Paradise",
+      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.",
+      "videoUrl": "/images/home/video/farm_video.mp4"
     }
   ],
 
-  "achivements":[
-{
-  "id":1,
-  "icon":"",
-  "title":"20 Years Of Experience",
-  "subtitle":"All About Dairy And Cow Farm "
-},
-{
-  "id":2,
-  "icon":"",
-  "title":"Experienced Workers",
-  "subtitle":"All About Dairy And Cow Farm "
-},
-{
-  "id":3,
-  "icon":"",
-  "title":"100+ Awards Wins",
-  "subtitle":"All About Dairy And Cow Farm "
-}
+  "achivements": [
+    {
+      "id": 1,
+      "icon": "",
+      "title": "20 Years Of Experience",
+      "subtitle": "All About Dairy And Cow Farm "
+    },
+    {
+      "id": 2,
+      "icon": "",
+      "title": "Experienced Workers",
+      "subtitle": "All About Dairy And Cow Farm "
+    },
+    {
+      "id": 3,
+      "icon": "",
+      "title": "100+ Awards Wins",
+      "subtitle": "All About Dairy And Cow Farm "
+    }
   ],
+
+  "aboutUs": {
+    "aboutUs-section": {
+      "id": 1,
+      "className": "aboutUs-container my-5",
+      "left": {
+        "id": 2,
+        "className": "aboutUs-left",
+        "imgContainer": {
+          "id": 3,
+          "className": "aboutUs-img",
+          "img": {
+            "src": "https://templatekit.kulokale.com/moolydairy/wp-content/uploads/sites/13/elementor/thumbs/a-group-of-young-dairy-cows-outdoor-walking-in-a-f-resize-qb2pqvi2a1jcltssj6juunks8520hepbr1pd1hmf7g.jpg",
+            "alt": "cow farm"
+          }
+        },
+        "detail": {
+          "id": 4,
+          "className": "cow-farm-detail",
+          "text": "We Are Trusted Happy",
+          "span": "6000+ Client"
+        }
+      },
+      "detailSection": {
+        "id": 5,
+        "className": "aboutUs-detail",
+        "italicName": {
+          "id": 6,
+          "className": "italic-name",
+          "text": "About Us"
+        },
+        "heading": {
+          "id": 7,
+          "text": "Tracing the Journey of Milk from Our Contented Cows"
+        },
+        "paragraph": {
+          "id": 8,
+          "text": "Curabitur faucibus orci a condimentum pretium. Pellentesque vel libero feugiat nibh cursus consequat vel eu lectus. Praesent eget ipsum blandit, tempus purus sed, vestibulum tellus. Nam laoreet massa semper est gravida tristique."
+        },
+        "quote": {
+          "id": 9,
+          "className": "aboutUs-quote",
+          "icon": "FaQuoteRight className='quote-style'",
+          "text": "Curabitur id sem sit amet nibh vulputate tincidunt in vitae erat. Morbi vehicula, purus quis lacinia vehicula, nunc nunc rutrum est, sit amet porta odio mi vulputate turpis. Proin at ex pharetra."
+        },
+        "signature": {
+          "id": 10,
+          "className": "signature-div",
+          "img": {
+            "src": "https://templatekit.kulokale.com/moolydairy/wp-content/uploads/sites/13/2023/08/signature.png",
+            "alt": "signature-img"
+          },
+          "name": "Name of Owner",
+          "title": "Founder of Tejashree Milk"
+        }
+      }
+    },
+    "gallery": {
+      "galleryOne": {
+        "leftMain": {
+          "id": 1,
+          "className": "left-main eihe-box eihe-shutter-in",
+          "img": {
+            "src": "https://templatekit.kulokale.com/moolydairy/wp-content/uploads/sites/13/2023/08/cows-on-a-diary-farm-agriculture-industry-resize.jpg",
+            "alt": "whyChooseim"
+          }
+        },
+        "leftSub": [
+          {
+            "id": 2,
+            "className": "eihe-box eihe-shutter-in",
+            "img": {
+              "src": "https://templatekit.kulokale.com/moolydairy/wp-content/uploads/sites/13/2023/08/one-of-milk-cows-in-cowshed-touching-hand-of-male-resize.jpg",
+              "alt": ""
+            }
+          },
+          {
+            "id": 3,
+            "className": "eihe-box eihe-shutter-in",
+            "img": {
+              "src": "https://templatekit.kulokale.com/moolydairy/wp-content/uploads/sites/13/2023/08/one-of-milk-cows-in-cowshed-touching-hand-of-male-resize.jpg",
+              "alt": ""
+            }
+          }
+        ]
+      },
+      "galleryTwo": {
+        "rightSub": [
+          {
+            "id": 4,
+            "className": "eihe-box eihe-shutter-in",
+            "img": {
+              "src": "https://templatekit.kulokale.com/moolydairy/wp-content/uploads/sites/13/2023/08/one-of-milk-cows-in-cowshed-touching-hand-of-male-resize.jpg",
+              "alt": ""
+            }
+          },
+          {
+            "id": 5,
+            "className": "eihe-box eihe-shutter-in",
+            "img": {
+              "src": "https://templatekit.kulokale.com/moolydairy/wp-content/uploads/sites/13/2023/08/one-of-milk-cows-in-cowshed-touching-hand-of-male-resize.jpg",
+              "alt": ""
+            }
+          }
+        ],
+        "rightMain": {
+          "id": 6,
+          "className": "right-main eihe-box eihe-shutter-in",
+          "img": {
+            "src": "https://templatekit.kulokale.com/moolydairy/wp-content/uploads/sites/13/2023/08/cows-on-a-diary-farm-agriculture-industry-resize.jpg",
+            "alt": "whyChooseim"
+          }
+        }
+      }
+    },
+
+    "whyChooseMain": {
+      "id": 1,
+      "className": "why-choose-main",
+      "whyChoose": {
+        "id": 2,
+        "className": "why-choose",
+        "italicName": {
+          "id": 3,
+          "className": "italic-name",
+          "text": "Why Choose Us"
+        },
+        "heading": {
+          "id": 4,
+          "text": "Unleash the Magic of Farm Crafted Dairy"
+        },
+        "paragraph": {
+          "id": 5,
+          "text": "Curabitur faucibus orci a condimentum pretium. Pellentesque vel libero feugiat nibh cursus consequat vel eu lectus."
+        },
+        "checkboxes": [
+          {
+            "id": 6,
+            "className": "checkbox",
+           
+            "detail": {
+              "span": "100% Naturally",
+              "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            }
+          },
+          {
+            "id": 7,
+            "className": "checkbox",
+            
+            "detail": {
+              "span": "100% Naturally",
+              "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            }
+          },
+          {
+            "id": 8,
+            "className": "checkbox",
+           
+            "detail": {
+              "span": "100% Naturally",
+              "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            }
+          }
+        ]
+      },
+      "whyChooseImg": {
+        "id": 9,
+        "className": "why-choose-img",
+        "img": {
+          "src": "https://templatekit.kulokale.com/moolydairy/wp-content/uploads/sites/13/2023/08/cows-on-a-diary-farm-agriculture-industry-resize.jpg",
+          "alt": "whyChooseim"
+        }
+      }
+    }
+  },
+
   "footer": {
     "sloganheading": {
       "title": "ABOUT US"
@@ -145,5 +322,4 @@
     },
     "subheading": "Web Design & Development by Hematite Infotech Pvt. Ltd."
   }
- 
 }

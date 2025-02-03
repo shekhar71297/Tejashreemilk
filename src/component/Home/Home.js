@@ -32,7 +32,7 @@ function Home() {
       <AboutUs/>
       {/* <Contact/> */}
       
-      {/* <AboutUs/> */}
+    
     
 
       {data?.home?.map((val, index) => (
@@ -196,7 +196,9 @@ function Home() {
      
 
       </div>
+      
       <div className='footer-section' >
+
         <FooterPage />
       </div>
     </div>

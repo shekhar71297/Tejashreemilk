@@ -24,7 +24,8 @@ function App() {
 
     { path: "", element: <Home /> },
     { path: "/aboutUs", element: <AboutUs /> },
-    { path: "/contact-Us", element: <Contact /> }
+    { path: "/contact-Us", element: <Contact /> },
+    
 
   ]);
 
