@@ -6,22 +6,14 @@ import { BiPhoneCall } from "react-icons/bi";
 import { SlLocationPin } from "react-icons/sl";
 import "./contact.css";
 import FooterPage from '../../common/footer/FooterPage'
+import PageTitle from '../../common/pageTitle/PageTitle'
  
 
 function Contact() {
   return (
     <div>
       {/* <Landing/> */}
-      <div className="contact-bg">
-        <img
-          src="https://wallpapercrafter.com/desktop1/671361-liquid-motion-water-no-people-black-color-abstract.jpg"
-          alt="contact-background"
-        />
-        <div className="deatailsOnBackgound">
-          <span>Get In Touch</span>
-          <span>Contact Us</span>
-        </div>
-      </div>
+    <PageTitle title={"Contact Us"} description={"Get In Touch"}/>
       {/* contactUs form */}
       <Container className="contact-container">
         <div className="left-form">

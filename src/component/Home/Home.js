@@ -10,8 +10,8 @@ import AboutUs from '../About/AboutUs'
 function Home() {
   return (
     <div>
-      {/* <NavBar/> */}
       <Landing/>
+      {/* <NavBar/> */}
       <AboutUs/>
       {/* <Contact/> */}
       
