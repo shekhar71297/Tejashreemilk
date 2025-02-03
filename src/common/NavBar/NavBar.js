@@ -3,15 +3,22 @@ import { Image } from 'react-bootstrap';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+import { MdOutlineEmail } from "react-icons/md";
+import { MdOutlineWifiCalling3 } from "react-icons/md";
+import { CiLocationOn } from "react-icons/ci";
 import { WebContext } from '../../App';
 import { Link } from 'react-router-dom';
+import './nav.css'
 function NavBar() {
   const data = useContext(WebContext);
   return (
     <div>
-      <Navbar bg="light" data-bs-theme="light">
+
+
+      <hr className='hr-size' ></hr>
+      <Navbar className='navbar-theam'>
         <Container>
-        {data?.logo?.map((val, index) =>
+          {/* {data?.logo?.map((val, index) =>
             <Navbar.Brand key={index}>
               <div>
                 <Link to='/'>
@@ -19,11 +26,11 @@ function NavBar() {
                 </Link>
               </div>
             </Navbar.Brand>
-          )}
+          )} */}
           <Nav className="me-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#features">Features</Nav.Link>
-            <Nav.Link href="#pricing">Pricing</Nav.Link>
+            <Link className='nav-link'  to="" >Home</Link>
+            <Link  className='nav-link' to="/services" >Services</Link>
+            <Link  className='nav-link' to="/contact-Us" >Contact</Link>
           </Nav>
         </Container>
       </Navbar>

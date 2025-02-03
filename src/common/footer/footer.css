@@ -96,12 +96,16 @@ ul {
   text-align: justify;
   display: flex;
   flex-direction: row;
+  font-size: 16px !important;
+  font-weight: 400 ;
 }
 
 .footer-email {
   display: flex;
   flex-direction: row;
   padding: 5px 0px 5px 0px;
+  font-size: 16px !important;
+  font-weight: 400 ;
 }
 
 .footer-email a {
@@ -112,6 +116,8 @@ ul {
 .footer-phone {
   display: flex;
   flex-direction: row;
+  font-size: 16px !important;
+  font-weight: 400 ;
 }
 
 .footer-phone a {

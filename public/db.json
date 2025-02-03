@@ -5,6 +5,81 @@
       "logoImgurl": "/images/NavBar/logo.png"
     }
   ],
+  
+  "home": [
+    {
+      "id": 1,
+      "logoImgurl": "/images/home/bg-home.jpg"
+    }
+  ],
+  "product":[{
+    "id":1,
+    "imgUrl":"/images/home/product1.png",
+    "heading":"Fresh Milk",
+    "content":"Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "price":"22"
+  },
+  {
+    "id":2,
+    "imgUrl":"/images/home/product1.png",
+    "heading":"Fresh Milk",
+    "content":"Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "price":"22"
+  },
+  {
+    "id":3,
+    "imgUrl":"/images/home/product1.png",
+    "heading":"Fresh Milk",
+    "content":"Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "price":"22"
+  },
+  {
+    "id":4,
+    "imgUrl":"/images/home/product1.png",
+    "heading":"Fresh Milk",
+    "content":"Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "price":"22"
+  }
+],
+"about":[
+  {
+    "id":1,
+    "imgUrl":"/images/about/farm.jpg",
+    "subheading":"Our Advantages",
+    "heading":"Unleash the Magic of Farm-Crafted Dairy",
+    "content":"Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+  }
+],
+  "homevideo":[
+    {
+      "id": 1,
+      "subtitle":"Farm Perfect Dairy",
+      "heading":"Welcome to our Dairy Paradise",
+      "content":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.",
+      "videoUrl":"/images/home/video/farm_video.mp4"
+    }
+  ],
+
+  "achivements":[
+{
+  "id":1,
+  "icon":"",
+  "title":"20 Years Of Experience",
+  "subtitle":"All About Dairy And Cow Farm "
+},
+{
+  "id":2,
+  "icon":"",
+  "title":"Experienced Workers",
+  "subtitle":"All About Dairy And Cow Farm "
+},
+{
+  "id":3,
+  "icon":"",
+  "title":"100+ Awards Wins",
+  "subtitle":"All About Dairy And Cow Farm "
+}
+  ],
   "footer": {
     "sloganheading": {
       "title": "ABOUT US"
@@ -70,4 +145,5 @@
     },
     "subheading": "Web Design & Development by Hematite Infotech Pvt. Ltd."
   }
+ 
 }

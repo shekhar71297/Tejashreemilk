@@ -1,0 +1,162 @@
+/* home.css */
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@400;500;600&display=swap');
+
+
+
+.home-adv{
+background-image: url(../../../public/images/home/bg-home.jpg);
+background-size: 100% 100%;
+max-width: 100%;
+height: 50%;
+}
+.Card-body{
+  border-radius: 70px 50px 70px 20px !important;
+  border: none !important;
+  box-shadow: 0px 9px 13px #0000004d;
+  margin-bottom: 20px;
+  height: 308px !important;
+  padding-left:20px ;
+}
+.farmVideo{
+  border-bottom-right-radius: 70px !important;
+  border-top-right-radius: 20px !important;
+}
+.image-container {
+  position: relative;
+  display: inline-block;
+}
+.subtitle{
+  font-family: 'Courgette',sans-serif !important;
+  font-size: 22px !important;
+  color:#F8AB13 !important ;
+}
+.heading{
+  color: #103371;
+  font-size: 45px !important;
+  font-family: 'Commissioner', sans-serif !important;
+  font-weight: 700 !important ;
+}
+.content{
+  color: #7A7A7A;
+  font-size: 15px !important;
+  font-weight: 200 !important ;
+}
+.card-overlay {
+  position: absolute;
+  top: 650px;
+  width: 100%;
+  margin: 0;
+  padding: 10px;
+  color: white;
+  border-radius: 10px;
+}
+.footer-section{
+  margin-top: 200px;
+}
+
+.column-content {
+
+  display: flex;
+  flex-direction: row;
+  padding-top: 10px;
+  /* box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); */
+}
+.achiv-icons{
+font-size: 45px;
+color: #F8AB13 ;
+}
+.record-card {
+  border-radius: 30px !important;
+  overflow: hidden;
+  box-shadow: 0px 1px 10px #00000075;
+  border: none !important;
+}
+.achiv-content{
+margin: 10px;
+}
+.achive-body{
+  padding: 10px;
+}
+.achiev-title{
+  color: #103371;
+}
+.product-section{
+margin-top: 400px;
+}
+.product-heading{
+text-align: center;
+}
+.product-heading{
+  color: #103371;
+  font-size: 45px !important;
+  font-family: 'Commissioner', sans-serif !important;
+  font-weight: 700 !important ;
+  margin-bottom: 50px;
+}
+
+.product-subheading{
+  font-family: 'Courgette',sans-serif !important;
+  font-size: 22px !important;
+  color:#F8AB13 ;
+}
+/* .product-img{
+  max-width: 60%;
+  max-height: 100%;
+} */
+.product-name{
+  font-size: 30px !important;
+  font-family: 'Commissioner', sans-serif !important;
+  font-weight: 700 !important ;
+}
+.product-detail{
+  font-size: 15px !important;
+  font-family: 'Commissioner', sans-serif !important;
+}
+.product-img{
+  padding: 30px;
+}
+.product-card{
+padding: 20px;
+border: none !important;
+border-top-left-radius: 70px !important;
+border-top-right-radius: 20px !important;
+border-bottom-right-radius: 20px !important;
+border-bottom-left-radius: 20px !important;
+box-shadow: 0px 6px 17px #00000069;
+}
+.product-price{
+  color:#F8AB13 ;
+  font-size: 30px;
+}
+.price-div{
+  display: flex;
+  flex-direction: row;
+}
+.price-logo{
+  font-size: 25px;
+}
+.position-absolute{
+  padding: 40px;
+  border: none !important;
+  background-color: #F0FCFF !important;
+  border-top-left-radius: 70px !important;
+  border-bottom-right-radius: 70px !important;
+}
+.about-heading{
+font-size: 30px;
+color: #103371;
+font-weight: 700;
+}
+.about-btn{
+  border-radius: 0px 20px !important;
+  padding: 10px !important;
+}
+.about-content{
+font-size: 15px;
+color: #7A7A7A ;
+}
+.about-section{
+  margin-top: 50px;
+}
