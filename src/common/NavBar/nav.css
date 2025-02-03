@@ -1,0 +1,35 @@
+.nav-info{
+  display: flex;
+  flex-direction: row;
+}
+.nav-subinfo{
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+}
+.nav-icon-div{
+
+  display: flex;
+  flex-direction: row;
+}
+.nav-icon{
+  color: #082658;
+  font-size: 40px;
+}
+.info{
+  display: flex;
+  flex-direction: column;
+}
+.hr-size{
+  color: rgba(0, 0, 0, 0.411);
+}
+.navbar-theam{
+  background-color: white;
+  padding: 10px 10px !important;
+}
+.nav-link{
+  margin-right: 40px;
+  color: #082658 !important;
+  font-size: 18px !important;
+  font-weight: 500 !important;
+}
