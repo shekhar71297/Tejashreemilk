@@ -1,6 +1,10 @@
-import React, { useContext, useEffect } from "react";
-import NavBar from "../../common/NavBar/NavBar";
-import FooterPage from "../../common/footer/FooterPage";
+
+
+
+
+import React, { useContext, useEffect, useState } from 'react';
+import NavBar from '../../common/NavBar/NavBar';
+import FooterPage from '../../common/footer/FooterPage';
 import { GrAchievement } from "react-icons/gr";
 import { GrCertificate } from "react-icons/gr";
 import { GrUserWorker } from "react-icons/gr";
@@ -18,19 +22,95 @@ import Landing from "../landingPage/Landing";
 // import AboutUs from '../About/AboutUs'
 import HomeService from "../Service/HomeService";
 
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from 'react-router-dom';
 
 import AOS from "aos";
 import "aos/dist/aos.css";
 
 function Home() {
   const data = useContext(WebContext);
+  const nav = useNavigate()
+  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
   useEffect(() => {
     AOS.init({
       duration: 1000, // Animation duration in milliseconds
     });
   }, []);
+ 
 
+  const [cardStyle, setCardStyle] = useState({});
+
+  useEffect(() => {
+    const updateStyle = () => {
+      if (window.innerWidth < 575) {
+        setCardStyle({
+          position: 'relative',
+          right: '0px',
+          width: '100%',
+          height: 'auto',
+          marginTop: '20px',
+          padding: '40px',
+          border: 'none',
+          backgroundColor: '#F0FCFF',
+          borderTopLeftRadius: '70px',
+          borderBottomRightRadius: '70px',
+        });
+        
+      } 
+      else if (screenWidth >= 920 && screenWidth <= 1024) {
+        // For screens between 920px and 1024px
+        setCardStyle({
+          position: 'absolute',
+          top: '30%',
+          right: '-50%',
+          width: '525px',
+          height: '320px',
+          padding: '40px',
+          border: 'none',
+          backgroundColor: '#F0FCFF',
+          borderTopLeftRadius: '70px',
+          borderBottomRightRadius: '70px',
+        });
+      } else {
+        setCardStyle({
+          position: 'absolute',
+          top: '30%',
+          right: '-30%',
+          width: '500px',
+          height: '350px',
+          padding: '40px',
+          border: 'none',
+          backgroundColor: '#F0FCFF',
+          borderTopLeftRadius: '70px',
+          borderBottomRightRadius: '70px',
+        });
+      }
+    };
+
+    // Run on mount and on resize
+    updateStyle();
+    window.addEventListener('resize', updateStyle);
+
+    return () => {
+      window.removeEventListener('resize', updateStyle);
+    };
+  }, []);
+  const navigateToAbout = () => {
+    nav('/about-Us')
+  }
+
+
+  useEffect(() => {
+    const handleResize = () => {
+      setScreenWidth(window.innerWidth);
+    };
+
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
   return (
     <div>
       <Landing />
@@ -39,6 +119,12 @@ function Home() {
       
       {/* <AboutUs data-aos="fade-in"/> */}
       {/* <Contact/> */}
+      {/* <NavBar/> */}
+      {/* <AboutUs/> */}
+      {/* <Contact/> */}
+
+      {/* <AboutUs/> */}
+
 
       {data?.home?.map((val, index) => (
         <div className="image-container">
@@ -72,6 +158,7 @@ function Home() {
                 </Card>
               ))}
             </Container>
+            
             <Container className="mt-4">
               {/* Card Container */}
               <Card className="record-card">
@@ -160,24 +247,14 @@ function Home() {
                     src={val.imgUrl}
                   />
                   <Card.Body>
-                    <Card.Title className="product-name">
-                      {val?.heading}
-                    </Card.Title>
-                    <Card.Text className="product-detail">
-                      {val?.content}
-                    </Card.Text>
-                    <div className="price-div">
-                      <span
-                        className="product-price"
-                        style={{
-                          color: index % 2 === 0 ? "#F8AB13" : "#103371", // Change text color for odd cards
-                        }}
-                      >
-                        <span>
-                          <FaRupeeSign className="price-logo" />
-                        </span>
-                        {val?.price}
-                      </span>
+                    <Card.Title className='product-name' >{val?.heading}</Card.Title>
+                    <Card.Text className='product-detail' >{val?.content}</Card.Text>
+                    <div className='price-div'  >
+
+                      <span className='product-price' style={{
+                        color: index % 2 === 0 ? '#F8AB13' : '#103371', // Change text color for odd cards
+                      }}  ><span><FaRupeeSign className='price-logo' /></span>{val?.price}</span>
+
                     </div>
                   </Card.Body>
                 </Card>
@@ -187,46 +264,80 @@ function Home() {
         </Container>
       </div>
 
-      <div className="about-section">
-        <Row className="d-flex align-items-center">
-          {/* Left Image Section */}
-          <Col md={8} className="position-relative">
-            {data?.about?.map((val, index) => (
-              <>
-                <img
-                  src={val?.imgUrl} // Replace with your image source
-                  alt="Example"
-                  className="img-fluid"
-                />
-                {/* Right Card */}
-                <Card
-                  className="position-absolute"
-                  style={{
-                    top: "30%",
-                    right: "-30%",
-                    width: "500px",
-                    height: "350px",
-                  }}
-                >
-                  <Card.Body>
-                    <Card.Title className="subtitle">
-                      {val?.subheading}
-                    </Card.Title>
-                    <Card.Text className="about-heading">
-                      {val?.heading}
-                    </Card.Text>
-                    <Card.Text className="about-content">
-                      {val?.content}
-                    </Card.Text>
-                    <Button className="about-btn">Know More</Button>
-                  </Card.Body>
-                </Card>
-              </>
-            ))}
-          </Col>
-        </Row>
+   
+        <div className='about-section'>
+        <Container>
+      <Row className="d-flex align-items-center">
+        <Col md={8} className="position-relative">
+          {data?.about?.map((val, index) => (
+            <div key={index}>
+              <img
+                src={val?.imgUrl}
+                alt="Example"
+                className="img-fluid"
+              />
+              {/* Right Card (conditionally styled) */}
+              <Card style={cardStyle}>
+                <Card.Body>
+                  <Card.Title className='subtitle'>{val?.subheading}</Card.Title>
+                  <Card.Text className='about-heading'>{val?.heading}</Card.Text>
+                  <Card.Text className='about-content'>{val?.content}</Card.Text>
+                  <Button className='about-btn' onClick={navigateToAbout}>
+                    Know More
+                  </Button>
+                </Card.Body>
+              </Card>
+            </div>
+          ))}
+        </Col>
+      </Row>
+    </Container>
+        </div>
+    
+      
+      <div className='gallery-section' >
+        <div className="gallery-name-title mt-5">
+          <span >Our Gallery</span>
+          <h2>Gallery Farm
+          </h2>
+        </div>
+        <Container className="gallery-section mb-5 ">
 
-        {/* Mobile View - Image on top, Card below */}
+          <div className="gallery-one">
+            <div className="left-main eihe-box eihe-shutter-in">
+
+              <img
+                src="https://templatekit.kulokale.com/moolydairy/wp-content/uploads/sites/13/2023/08/cows-on-a-diary-farm-agriculture-industry-resize.jpg"
+                alt="whyChooseim"
+              />
+
+            </div>
+            <div className="left-sub">
+              <div className="eihe-box eihe-shutter-in">
+                <img src="https://templatekit.kulokale.com/moolydairy/wp-content/uploads/sites/13/2023/08/one-of-milk-cows-in-cowshed-touching-hand-of-male-resize.jpg" alt="" />
+              </div>
+              <div className="eihe-box eihe-shutter-in">
+                <img src="https://templatekit.kulokale.com/moolydairy/wp-content/uploads/sites/13/2023/08/one-of-milk-cows-in-cowshed-touching-hand-of-male-resize.jpg" alt="" />
+              </div>
+            </div>
+          </div>
+          <div className="gallery-two">
+            <div className="right-sub ">
+              <div className="eihe-box eihe-shutter-in">
+                <img src="https://templatekit.kulokale.com/moolydairy/wp-content/uploads/sites/13/2023/08/one-of-milk-cows-in-cowshed-touching-hand-of-male-resize.jpg" alt="" />
+              </div>
+              <div className="eihe-box eihe-shutter-in">
+                <img src="https://templatekit.kulokale.com/moolydairy/wp-content/uploads/sites/13/2023/08/one-of-milk-cows-in-cowshed-touching-hand-of-male-resize.jpg" alt="" />
+              </div>
+            </div>
+            <div className="right-main  eihe-box eihe-shutter-in">
+              <img
+                src="https://templatekit.kulokale.com/moolydairy/wp-content/uploads/sites/13/2023/08/cows-on-a-diary-farm-agriculture-industry-resize.jpg"
+                alt="whyChooseim"
+              />
+            </div>
+          </div>
+        </Container>
       </div>
 
       <div className="footer-section">

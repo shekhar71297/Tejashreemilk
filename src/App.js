@@ -24,9 +24,8 @@ function App() {
   const router = createHashRouter([
 
     { path: "", element: <Home /> },
-    { path: "/aboutUs", element: <AboutUs /> },
-    { path: "/contact-Us", element: <Contact /> },
-    
+    { path: "/about-Us", element: <AboutUs /> },
+    { path: "/contact-Us", element: <Contact /> }
 
   ]);
 

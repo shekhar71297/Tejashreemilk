@@ -6,6 +6,7 @@ import { CgMail } from "react-icons/cg";
 import { BiPhoneCall } from "react-icons/bi";
 import { SlLocationPin } from "react-icons/sl";
 import  './landing.css'
+import NavBar from '../../common/NavBar/NavBar';
 
 function Landing() {
   // const data = useContext(WebContext);
@@ -38,7 +39,9 @@ function Landing() {
       </div>
       </div>
       </div>
-
+<div>
+  {/* <NavBar/> */}
+</div>
     </div>
   )
 }
