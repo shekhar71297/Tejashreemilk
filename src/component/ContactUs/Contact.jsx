@@ -1,4 +1,4 @@
-import React from "react";
+import {useEffect} from "react";
 // import Landing from '../landingPage/Landing'
 import Container from "react-bootstrap/Container";
 import { CgMail } from "react-icons/cg";
@@ -8,17 +8,24 @@ import "./contact.css";
 import FooterPage from '../../common/footer/FooterPage'
 import PageTitle from '../../common/pageTitle/PageTitle'
  
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 function Contact() {
+   useEffect(() => {
+      AOS.init({
+        duration: 1000, // Animation duration in milliseconds
+      });
+    }, []);
   return (
     <div>
       {/* <Landing/> */}
     <PageTitle title={"Contact Us"} description={"Get In Touch"}/>
       {/* contactUs form */}
-      <Container className="contact-container">
+      <Container className="contact-container  ">
         <div className="left-form">
           <span>For more Information</span>
-          <h1>Hey, Lets Talk</h1>
+          <h1  >Hey, Lets Talk</h1>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, error!
           </p>
@@ -47,7 +54,7 @@ function Contact() {
           <div className="contactUs-details">
           <div className="contactUs-icon-name">
             <BiPhoneCall className="contactUs-icon" />
-              <span className="icon-details">Phone Number</span>
+              <span className="icon-details" data-aos="fade-in">Phone Number</span>
               </div>
             <div className="mail-info">
               <span>abhi@gmail.com</span>
@@ -94,6 +101,8 @@ function Contact() {
        <FooterPage/>
     </div>
   );
-}
+} 
+
+
 
 export default Contact;

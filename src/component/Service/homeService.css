@@ -1,0 +1,152 @@
+/* farm services */
+.farm-service{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20rem;
+  
+  }
+  .farm-image-left{
+    width: 50%;
+    display: flex;
+    align-items: flex-start;
+    padding: 6rem 0rem;
+  }
+  
+  .farm-image-left img{
+    max-width: 80%;
+    object-fit: cover;
+    border-radius: 0rem 5rem 0rem 0rem ;
+  }
+  
+  .farm-service-info{
+    display: flex;
+    justify-content: space-around;
+     
+    width: 60%;
+  }
+  
+  .farm-service-content{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+     padding-right: 4.5rem;
+    width: 45%;
+  }
+
+  .farm-content-one span{
+    font-family: 'Courgette';
+  font-size: 24px;
+  color: #F8AB13;
+  }
+  .farm-content-one h1{
+    font-size: 3rem;
+    font-weight: 700;
+    color: #103371
+  }
+
+
+  .farm-content-two{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    row-gap: 0.5rem;
+  }
+  .farm-content-two li{
+    font-size: 18px;
+  }
+  .farm-check-icon{
+     margin-right: 1rem;
+    color: #F8AB13;
+  }
+  .farm-img-right{
+    width: 50%;
+    display: flex;
+  flex-direction: column;
+  padding-right: 10rem;
+  row-gap: 1rem;
+
+  }
+  .farm-img-right img{
+    max-width: 100%;
+    border-radius: 3rem 0rem;
+  }
+  .farm-content-right-down{
+    display: flex;
+  justify-content: space-around;
+  align-items: center;
+  
+  }
+  
+  .farm-content-right-count{
+    display: flex;
+    gap: 3rem;
+  }
+
+  .farm-service-btn{
+    color: white;
+    width: fit-content;
+    font-size: 18px;
+    padding: 1.5rem 3rem;
+    border-radius: 0rem 2rem;
+    background: #3C86CB;
+    border: none;
+
+  }
+
+  .farm-service-right-arrow{
+    font-size: 18px;
+  }
+
+  .farm-img-right h1{
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #103371
+  }
+  .farm-content-right-count-style span{
+    color: #F8AB13;
+   font-size: 3.8rem;
+   font-weight: 700;
+  }
+
+  .farm-content-right-count-style p{
+    font-size: 18px;
+    color: gray;
+  }
+
+  @media (max-width: 764px) {
+    .farm-service{
+        display: flex ;
+        flex-direction: column;
+    }
+    .farm-image-left {
+        width: fit-content;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 0rem;
+    }
+    .farm-service-info {
+      display: flex
+  ;
+      justify-content: space-around;
+      flex-direction: column;
+      padding: 2rem;
+      width: 100%;
+  }
+  .farm-service-content {
+    width: 100%;
+    padding: 0;
+    row-gap: 2rem;
+  }
+  .farm-img-right {
+    width: 100%;
+    padding: 0;
+    margin-top: 5rem;
+  }
+  .farm-content-two li{
+    font-size: 13px;
+  }
+  }

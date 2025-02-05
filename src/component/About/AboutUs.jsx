@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext,useEffect } from "react";
 import PageTitle from "../../common/pageTitle/PageTitle";
 import { Container } from "react-bootstrap";
 import FooterPage from "../../common/footer/FooterPage";
@@ -6,12 +6,19 @@ import "./aboutUs.css";
 import { FaQuoteRight } from "react-icons/fa";
 import { ImCheckboxChecked } from "react-icons/im";
 import { WebContext } from '../../App';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 function AboutUs() {
   const data = useContext(WebContext);
-
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // Animation duration in milliseconds
+    });
+  }, []);
+  
   if (!data || !data.aboutUs || !data.aboutUs['aboutUs-section']) {
-    return <div>Loading...</div>; // Handle the case when data is not available
+    return <div>Loading...</div>;  
   }
   const aboutUsData = data.aboutUs['aboutUs-section'];
 
@@ -19,7 +26,7 @@ function AboutUs() {
 
   const whyChooseData  = data.aboutUs.whyChooseMain;
 
-  // Ensure galleryOne and galleryTwo are defined
+ 
   if (!galleryOne || !galleryTwo) {
     return <div>Loading...</div>;
   }
@@ -35,7 +42,7 @@ function AboutUs() {
               alt={aboutUsData.left.imgContainer.img.alt}
             />
           </div>
-          <div className={aboutUsData.left.detail.className}>
+          <div className={aboutUsData.left.detail.className} data-aos="fade-in">
             {aboutUsData.left.detail.text} <span>{aboutUsData.left.detail.span}</span>
           </div>
         </div>
@@ -60,7 +67,7 @@ function AboutUs() {
         </div>
       </Container>
       {/* why to choose us section */}
-      <div className={whyChooseData.className}>
+      <div className={whyChooseData.className} data-aos="fade-in">
         <div className={whyChooseData.whyChoose.className}>
           <span className={whyChooseData.whyChoose.italicName.className}>{whyChooseData.whyChoose.italicName.text}</span>
           <h1>{whyChooseData.whyChoose.heading.text}</h1>
@@ -70,7 +77,7 @@ function AboutUs() {
 
           <div className="why-choose-checkbox">
           {whyChooseData.whyChoose.checkboxes.map((item) => (
-            <div className={item.className} key={item.id}>
+            <div className={item.className} key={item.id} data-aos="fade-in">
            
            <ImCheckboxChecked className="checkbox-icon" />
               <div className="checkbox-detail">
@@ -99,26 +106,27 @@ function AboutUs() {
         </div>
 
         <Container className="gallery-section mb-5">
-      <div className="gallery-one">
+      <div className="gallery-one" data-aos="fade-up">
         <div className={galleryOne.leftMain.className}>
           <img
             src={galleryOne.leftMain.img.src}
             alt={galleryOne.leftMain.img.alt}
+            data-aos="fade-up"
           />
         </div>
         <div className="left-sub">
           {galleryOne.leftSub.map((subItem) => (
             <div className={subItem.className} key={subItem.id}>
-              <img src={subItem.img.src} alt={subItem.img.alt} />
+              <img src={subItem.img.src} alt={subItem.img.alt} data-aos="fade-up" />
             </div>
           ))}
         </div>
       </div>
-      <div className="gallery-two">
+      <div className="gallery-two" data-aos="fade-up">
         <div className="right-sub">
           {galleryTwo.rightSub.map((subItem) => (
             <div className={subItem.className} key={subItem.id}>
-              <img src={subItem.img.src} alt={subItem.img.alt} />
+              <img src={subItem.img.src} alt={subItem.img.alt} data-aos="fade-up"/>
             </div>
           ))}
         </div>
@@ -126,6 +134,7 @@ function AboutUs() {
           <img
             src={galleryTwo.rightMain.img.src}
             alt={galleryTwo.rightMain.img.alt}
+            data-aos="fade-up"
           />
         </div>
       </div>

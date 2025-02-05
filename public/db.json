@@ -220,7 +220,7 @@
           {
             "id": 6,
             "className": "checkbox",
-           
+
             "detail": {
               "span": "100% Naturally",
               "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
@@ -229,7 +229,7 @@
           {
             "id": 7,
             "className": "checkbox",
-            
+
             "detail": {
               "span": "100% Naturally",
               "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
@@ -238,7 +238,7 @@
           {
             "id": 8,
             "className": "checkbox",
-           
+
             "detail": {
               "span": "100% Naturally",
               "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
@@ -321,5 +321,73 @@
       "phone": "+91 - 8263926309 / 8999639478"
     },
     "subheading": "Web Design & Development by Hematite Infotech Pvt. Ltd."
+  },
+
+  "farmService": {
+    "farmImageLeft": {
+      "src": "/images/home/farm-service-left-img.jpg",
+      "alt": "farm-image",
+      "dataAos": "fade-right"
+    },
+    "farmServiceInfo": {
+      "farmServiceContent": {
+        "farmContentOne": {
+          "span": {
+            "dataAos": "fade-up",
+            "text": "Farm Services"
+          },
+          "h1": {
+            "dataAos": "fade-up",
+            "text": "The Eco-Friendly Practices on Our Cow Farm"
+          }
+        },
+        "farmContentTwo": [
+          {
+            "dataAos": "fade-up",
+            "text": "Maecenas tempor at tellus nec fermentum"
+          },
+          {
+            "dataAos": "fade-up",
+            "text": "Donec commodo maximus orci vel euismod"
+          },
+          {
+            "dataAos": "fade-up",
+            "text": "Aliquam maximus vestibulum libero dignissim"
+          }
+        ],
+        "button": {
+          "text": "Read more",
+          "icon": "TiArrowRight"
+        }
+      },
+      "farmImgRight": {
+        "img": {
+          "src": "/images/home/farm-service-right-img.jpg",
+          "alt": "farm-image",
+          "dataAos": "fade-left"
+        },
+        "h1": {
+          "dataAos": "fade-up",
+          "text": "Holistic Cow Care Service"
+        },
+        "farmContentRightDown": {
+          "dataAos": "fade-up",
+          "farmContentRightCount": [
+            {
+              "farmContentRightCountStyle": {
+                "span": "65+",
+                "p": "Nulla condimentum commodo dui"
+              }
+            },
+            {
+              "farmContentRightCountStyle": {
+                "span": "99%",
+                "p": "Nulla condimentum commodo dui"
+              }
+            }
+          ]
+        }
+      }
+    }
   }
 }

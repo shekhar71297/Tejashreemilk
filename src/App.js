@@ -6,6 +6,7 @@ import { createHashRouter, RouterProvider } from 'react-router-dom';
 import Home from './component/Home/Home';
 import AboutUs from './component/About/AboutUs';
 import Contact from './component/ContactUs/Contact';
+ 
 export const WebContext = createContext();
 
 function App() {
