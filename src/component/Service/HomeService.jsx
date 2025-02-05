@@ -6,13 +6,16 @@ import './homeService.css'
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { Container } from "react-bootstrap";
 
 function HomeService() {
   const data = useContext(WebContext);
 
   useEffect(() => {
     AOS.init({
-      duration: 1000, // Animation duration in milliseconds
+      duration: 1000, // Animation duration (1 second)
+      once: true, // Ensures animation happens only once
+      easing: "ease-out", // Smooth animation effect
     });
   }, []);
 
@@ -23,6 +26,7 @@ function HomeService() {
   const farmService = data.farmService;
   return (
     <div>
+      <Container>
       <div className="farm-service">
       <div className="farm-image-left">
           <img
@@ -75,6 +79,7 @@ function HomeService() {
           </div>
         </div>
       </div>
+      </Container>
     </div>
   );
 }

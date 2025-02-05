@@ -9,6 +9,7 @@ import { GrAchievement } from "react-icons/gr";
 import { GrCertificate } from "react-icons/gr";
 import { GrUserWorker } from "react-icons/gr";
 import { FaRupeeSign } from "react-icons/fa";
+import { TiArrowRight } from "react-icons/ti";
 import "./home.css";
 import { Image } from "react-bootstrap";
 import { WebContext } from "../../App";
@@ -36,7 +37,7 @@ function Home() {
       duration: 1000, // Animation duration in milliseconds
     });
   }, []);
- 
+
 
   const [cardStyle, setCardStyle] = useState({});
 
@@ -55,8 +56,8 @@ function Home() {
           borderTopLeftRadius: '70px',
           borderBottomRightRadius: '70px',
         });
-        
-      } 
+
+      }
       else if (screenWidth >= 920 && screenWidth <= 1024) {
         // For screens between 920px and 1024px
         setCardStyle({
@@ -114,16 +115,8 @@ function Home() {
   return (
     <div>
       <Landing />
-      <NavBar />
-      <HomeService/>
-      
-      {/* <AboutUs data-aos="fade-in"/> */}
-      {/* <Contact/> */}
-      {/* <NavBar/> */}
-      {/* <AboutUs/> */}
-      {/* <Contact/> */}
+      {/* <NavBar /> */}
 
-      {/* <AboutUs/> */}
 
 
       {data?.home?.map((val, index) => (
@@ -131,7 +124,7 @@ function Home() {
           <Image src={val.logoImgurl} fluid />
           <div className="card-overlay">
             {/* If you want to show a card overlay on the image */}
-            <Container className="mt-4">
+            <Container className="mt-4" data-aos="fade-up">
               {data?.homevideo?.map((val, index) => (
                 <Card className="Card-body">
                   <Row className="g-0">
@@ -140,7 +133,7 @@ function Home() {
                         <h3 className="subtitle">{val?.subtitle}</h3>
                         <h2 className="heading">{val?.heading}</h2>
                         <p className="content">{val?.content}</p>
-                        <Link> Know More</Link>
+                        <Link className='know-btn' > Know Us More <TiArrowRight className="farm-service-right-arrow" /> </Link>
                       </div>
                     </Col>
                     <Col md={6}>
@@ -158,69 +151,169 @@ function Home() {
                 </Card>
               ))}
             </Container>
-            
-            <Container className="mt-4">
-              {/* Card Container */}
-              <Card className="record-card">
-                <Card.Body className="achive-body">
-                  {/* Grid: One Row, Three Columns */}
-                  <Row>
-                    {/* Column 1 */}
-                    <Col md={4} className="p-3">
-                      <div className="column-content">
-                        <div className="achiv-icons">
-                          <GrCertificate />
-                        </div>
 
-                        <div className="achiv-content">
-                          <h5 className="achiev-title">
-                            20 Years Of Experience
-                          </h5>
-                          <p className="achiev-subtitle">
-                            All About Dairy And Cow Farm{" "}
-                          </p>
-                        </div>
-                      </div>
-                    </Col>
 
-                    {/* Column 2 */}
-                    <Col md={4} className="p-3">
-                      <div className="column-content">
-                        <div className="achiv-icons">
-                          <GrAchievement />
-                        </div>
 
-                        <div className="achiv-content">
-                          <h5 className="achiev-title">
-                            20 Years Of Experience
-                          </h5>
-                          <p>All About Dairy And Cow Farm </p>
-                        </div>
-                      </div>
-                    </Col>
-                    {/* Column 3 */}
-                    <Col md={4} className="p-3">
-                      <div className="column-content">
-                        <div className="achiv-icons">
-                          <GrUserWorker />
-                        </div>
-
-                        <div className="achiv-content">
-                          <h5 className="achiev-title">
-                            20 Years Of Experience
-                          </h5>
-                          <p>All About Dairy And Cow Farm </p>
-                        </div>
-                      </div>
-                    </Col>
-                  </Row>
-                </Card.Body>
-              </Card>
-            </Container>
           </div>
         </div>
       ))}
 
+      <section className="cow-section"  >
+        <Container>
+          <div className="cow-content">
+            {/* Image Section */}
+
+
+
+            <div className="cow-image-box">
+              {
+                data?.ceo?.map((val) =>
+                  <img
+                    src={val?.logoImgurl}
+                    alt="Cows in barn"
+                    className="cow-image"
+                  />
+                )
+              }
+              <div className="cow-overlay">
+                <span className="cow-trusted-text">We Are Trusted Happy </span>
+                <span className="cow-clients-text">6000+ Clients</span>
+              </div>
+            </div>
+
+            {/* Content Section */}
+            <div className="cow-text-box">
+              <h3 className="cow-about-title">About Us</h3>
+              <h2 className="cow-heading">Where Cows Roam and Milk Flows</h2>
+              <p className="cow-description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus semper
+                placerat metus. Cras venenatis mi non purus dictum, non tincidunt ligula
+                varius.
+              </p>
+
+              <div className="cow-vision-mission">
+                {/* Our Vision */}
+                <div className="cow-vision">
+                  <h4 className="cow-subtitle">Our Vision</h4>
+                  <ul className="cow-list">
+                    <li><span className='tick-color' >✔</span> Praesent Sodales Orci</li>
+                    <li><span className='tick-color' >✔</span> Curabitur Dignissim</li>
+                    <li><span className='tick-color' >✔</span> Nulla Condimentum</li>
+                  </ul>
+                </div>
+
+                {/* Our Mission */}
+                <div className="cow-mission">
+                  <h4 className="cow-subtitle">Our Mission</h4>
+                  <ul className="cow-list">
+                    <li><span className='tick-color' >✔</span> Nulla Condimentum</li>
+                    <li><span className='tick-color' >✔</span> Praesent Sodales Orci</li>
+                    <li><span className='tick-color' >✔</span> Curabitur Dignissim</li>
+                  </ul>
+                </div>
+              </div>
+
+              {/* Button */}
+              <button className="cow-btn">
+                Know Us More →
+              </button>
+            </div>
+          </div>
+        </Container>
+      </section>
+
+      <div className='record-section' >
+        <Container className="mt-4">
+          {/* Card Container */}
+          <Card className="record-card">
+            <Card.Body className="achive-body">
+              {/* Grid: One Row, Three Columns */}
+              <Row>
+                {/* Column 1 */}
+                <Col md={4} className="p-3">
+                  <div className="column-content">
+                    <div className="achiv-icons">
+                      <GrCertificate />
+                    </div>
+
+                    <div className="achiv-content">
+                      <h5 className="achiev-title">
+                        20 Years Of Experience
+                      </h5>
+                      <p className="achiev-subtitle">
+                        All About Dairy And Cow Farm{" "}
+                      </p>
+                    </div>
+                  </div>
+                </Col>
+
+                {/* Column 2 */}
+                <Col md={4} className="p-3">
+                  <div className="column-content">
+                    <div className="achiv-icons">
+                      <GrAchievement />
+                    </div>
+
+                    <div className="achiv-content">
+                      <h5 className="achiev-title">
+                        20 Years Of Experience
+                      </h5>
+                      <p>All About Dairy And Cow Farm </p>
+                    </div>
+                  </div>
+                </Col>
+                {/* Column 3 */}
+                <Col md={4} className="p-3">
+                  <div className="column-content">
+                    <div className="achiv-icons">
+                      <GrUserWorker />
+                    </div>
+
+                    <div className="achiv-content">
+                      <h5 className="achiev-title">
+                        20 Years Of Experience
+                      </h5>
+                      <p>All About Dairy And Cow Farm </p>
+                    </div>
+                  </div>
+                </Col>
+              </Row>
+            </Card.Body>
+          </Card>
+        </Container>
+      </div>
+
+
+
+
+      <div className='about-section'>
+        <Container>
+          <Row className="d-flex align-items-center">
+            <Col md={8} className="position-relative">
+              {data?.about?.map((val, index) => (
+                <div key={index}>
+                  <img
+                    src={val?.imgUrl}
+                    alt="Example"
+                    className="img-fluid"
+                  />
+                  {/* Right Card (conditionally styled) */}
+                  <Card style={cardStyle}>
+                    <Card.Body>
+                      <Card.Title className='subtitle'>{val?.subheading}</Card.Title>
+                      <Card.Text className='about-heading'>{val?.heading}</Card.Text>
+                      <Card.Text className='about-content'>{val?.content}</Card.Text>
+                      <button className="farm-service-btn">
+                        Read more <TiArrowRight className="farm-service-right-arrow" />
+                      </button>
+                    </Card.Body>
+                  </Card>
+                </div>
+              ))}
+            </Col>
+          </Row>
+        </Container>
+      </div>
 
       <div className="product-section">
         <Container>
@@ -263,82 +356,43 @@ function Home() {
           </Row>
         </Container>
       </div>
+      {/* 
+      <div className='service-section' >
+        <HomeService />
+      </div> */}
 
-   
-        <div className='about-section'>
-        <Container>
-      <Row className="d-flex align-items-center">
-        <Col md={8} className="position-relative">
-          {data?.about?.map((val, index) => (
-            <div key={index}>
-              <img
-                src={val?.imgUrl}
-                alt="Example"
-                className="img-fluid"
-              />
-              {/* Right Card (conditionally styled) */}
-              <Card style={cardStyle}>
-                <Card.Body>
-                  <Card.Title className='subtitle'>{val?.subheading}</Card.Title>
-                  <Card.Text className='about-heading'>{val?.heading}</Card.Text>
-                  <Card.Text className='about-content'>{val?.content}</Card.Text>
-                  <Button className='about-btn' onClick={navigateToAbout}>
-                    Know More
-                  </Button>
-                </Card.Body>
-              </Card>
-            </div>
-          ))}
-        </Col>
-      </Row>
-    </Container>
-        </div>
-    
-      
-      <div className='gallery-section' >
-        <div className="gallery-name-title mt-5">
-          <span >Our Gallery</span>
-          <h2>Gallery Farm
-          </h2>
-        </div>
-        <Container className="gallery-section mb-5 ">
+      <Container className="farm-section">
+        <Row className="align-items-center">
+          {/* Left Section */}
+          <Col md={5} className="text-section">
+            <p className="sub-heading">Our Program</p>
+            <h2 className="main-heading">Our Farm Programs</h2>
+            <p className="description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eu lectus nunc. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+            </p>
+            <button className="farm-service-btn">
+              Read more <TiArrowRight className="farm-service-right-arrow" />
+            </button>
+          </Col>
 
-          <div className="gallery-one">
-            <div className="left-main eihe-box eihe-shutter-in">
-
-              <img
-                src="https://templatekit.kulokale.com/moolydairy/wp-content/uploads/sites/13/2023/08/cows-on-a-diary-farm-agriculture-industry-resize.jpg"
-                alt="whyChooseim"
-              />
-
-            </div>
-            <div className="left-sub">
-              <div className="eihe-box eihe-shutter-in">
-                <img src="https://templatekit.kulokale.com/moolydairy/wp-content/uploads/sites/13/2023/08/one-of-milk-cows-in-cowshed-touching-hand-of-male-resize.jpg" alt="" />
-              </div>
-              <div className="eihe-box eihe-shutter-in">
-                <img src="https://templatekit.kulokale.com/moolydairy/wp-content/uploads/sites/13/2023/08/one-of-milk-cows-in-cowshed-touching-hand-of-male-resize.jpg" alt="" />
-              </div>
-            </div>
-          </div>
-          <div className="gallery-two">
-            <div className="right-sub ">
-              <div className="eihe-box eihe-shutter-in">
-                <img src="https://templatekit.kulokale.com/moolydairy/wp-content/uploads/sites/13/2023/08/one-of-milk-cows-in-cowshed-touching-hand-of-male-resize.jpg" alt="" />
-              </div>
-              <div className="eihe-box eihe-shutter-in">
-                <img src="https://templatekit.kulokale.com/moolydairy/wp-content/uploads/sites/13/2023/08/one-of-milk-cows-in-cowshed-touching-hand-of-male-resize.jpg" alt="" />
-              </div>
-            </div>
-            <div className="right-main  eihe-box eihe-shutter-in">
-              <img
-                src="https://templatekit.kulokale.com/moolydairy/wp-content/uploads/sites/13/2023/08/cows-on-a-diary-farm-agriculture-industry-resize.jpg"
-                alt="whyChooseim"
-              />
-            </div>
-          </div>
-        </Container>
-      </div>
+          {/* Right Section - Cards */}
+          <Col md={7}>
+            <Row>
+              {data?.programs?.map((program, index) => (
+                <Col key={index} md={4} sm={6} xs={12} className="mb-3">
+                  <Card className="program-card text-center">
+                    <div className="icon">{program.icon}</div>
+                    <Card.Body>
+                      <Card.Title className='program-title' >{program.title}</Card.Title>
+                      <Card.Text className='program-content' >{program.description}</Card.Text>
+                    </Card.Body>
+                  </Card>
+                </Col>
+              ))}
+            </Row>
+          </Col>
+        </Row>
+      </Container>
 
       <div className="footer-section">
         <FooterPage />

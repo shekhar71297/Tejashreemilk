@@ -3,7 +3,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 20rem;
+    margin-top: 100px;
+    margin-bottom: 100px;
   
   }
   .farm-image-left{
@@ -40,7 +41,7 @@
   color: #F8AB13;
   }
   .farm-content-one h1{
-    font-size: 3rem;
+    font-size: 38px;
     font-weight: 700;
     color: #103371
   }
@@ -88,7 +89,7 @@
     color: white;
     width: fit-content;
     font-size: 18px;
-    padding: 1.5rem 3rem;
+    padding: 15px;
     border-radius: 0rem 2rem;
     background: #3C86CB;
     border: none;
@@ -100,13 +101,13 @@
   }
 
   .farm-img-right h1{
-    font-size: 2.8rem;
+    font-size: 38px;
     font-weight: 700;
     color: #103371
   }
   .farm-content-right-count-style span{
     color: #F8AB13;
-   font-size: 3.8rem;
+   font-size: 38px;
    font-weight: 700;
   }
 

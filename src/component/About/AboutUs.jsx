@@ -8,6 +8,7 @@ import { ImCheckboxChecked } from "react-icons/im";
 import { WebContext } from '../../App';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import Landing from "../landingPage/Landing";
 
 function AboutUs() {
   const data = useContext(WebContext);
@@ -33,6 +34,7 @@ function AboutUs() {
 
   return (
     <div>
+      <Landing/>
            <PageTitle title={"About Us"} description={"History of Our Farm"} />
       <Container className={aboutUsData.className}>
         <div className={aboutUsData.left.className}>

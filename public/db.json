@@ -12,6 +12,34 @@
       "logoImgurl": "/images/home/bg-home.jpg"
     }
   ],
+  "ceo":[
+    {
+      "id": 1,
+      "logoImgurl": "/images/home/CEO.jpg"
+    }
+  ],
+"programs":[
+  {
+    "id":1,
+    "title": "Automation Technologies",
+    "description": "Suspendisse viverra est quis iaculis venenatis. Vestibulum sollicitudin.",
+    "icon": "🌱"
+  },
+  {
+    "id":2,
+    "title": "Animal Nutrition",
+    "description": "Suspendisse viverra est quis iaculis venenatis. Vestibulum sollicitudin.",
+    "icon": "🐄"
+  },
+  {
+    "id":3,
+    "title": "Natural Products",
+    "description": "Suspendisse viverra est quis iaculis venenatis. Vestibulum sollicitudin.",
+    "icon": "🥛"
+  }
+],
+
+
   "product": [
     {
       "id": 1,

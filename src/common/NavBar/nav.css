@@ -1,35 +1,82 @@
-.nav-info{
-  display: flex;
-  flex-direction: row;
+/*--------------------------------------- navbar css--------------------------------------- */
+.nav-link {
+  font-size: 16px;
+  font-weight: bold !important;
+  margin-left: 10px;
 }
-.nav-subinfo{
-  display: flex;
-  flex-direction: row;
-  margin: auto;
+.navbar{
+  text-align: center;
+  background-color:#ffffff57;
+  
 }
-.nav-icon-div{
+/* Add this to your navbar.css file */
 
-  display: flex;
-  flex-direction: row;
+/* Add this to your navbar.css file */
+
+.nav-link.active {
+color: #218dbb !important; 
+font-weight: 600; 
 }
-.nav-icon{
-  color: #082658;
-  font-size: 40px;
+
+
+
+
+.custom-dropdown .dropdown-title.active {
+color: #218dbb; /* Color when dropdown or its items are active */
 }
-.info{
+
+.nav-dropdown-item.active {
+color:#218dbb; /* Change this to the shade of blue you want */
+font-weight: bold; /* Optional: make the active dropdown item stand out more */
+}
+
+.nav-link:hover {
+  color:#218dbb !important;
+}
+.dropdown-toggle::after {
+  display:none !important;
+}
+.scrolled {
+  background-color: #ffffff; /* Add your desired background color */
+  box-shadow: 0 2px 4px rgba(168, 154, 154, 0.1); /* Add your desired box shadow */
+  transition: background-color 0.3s, box-shadow 0.3s; /* Add smooth transition */
+}
+.dropdown-item:hover{
+  background-color: #218dbb38 !important;
+}
+
+
+.custom-dropdown.show .dropdown-menu {
+  display: block;
+}
+
+.custom-dropdown .dropdown-menu {
+  display: none;
+  border: none; /* Remove upper border */
+}
+
+.custom-dropdown:hover .dropdown-menu {
+  display: block;
+}
+.slogan{
   display: flex;
   flex-direction: column;
 }
-.hr-size{
-  color: rgba(0, 0, 0, 0.411);
+.slogan-text{
+  font-size: 12px;
+  font-family: cursive;
+  font-weight: 300;
 }
-.navbar-theam{
-  background-color: white;
-  padding: 10px 10px !important;
+
+
+/* For medium devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+  .nav-dropdown-item {
+   text-align: center !important;
+  }
+  .nav-dropdown-item:hover{
+    color:#218dbb !important;
+  }
+  
 }
-.nav-link{
-  margin-right: 40px;
-  color: #082658 !important;
-  font-size: 18px !important;
-  font-weight: 500 !important;
-}
+

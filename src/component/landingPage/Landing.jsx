@@ -5,7 +5,7 @@ import React from 'react'
 import { CgMail } from "react-icons/cg";
 import { BiPhoneCall } from "react-icons/bi";
 import { SlLocationPin } from "react-icons/sl";
-import  './landing.css'
+import './landing.css'
 import NavBar from '../../common/NavBar/NavBar';
 
 function Landing() {
@@ -13,35 +13,36 @@ function Landing() {
   return (
     <div>
       <div className="nav-info">
-      {/* <img src={data.logo[0].logoImgurl} className="logo-img" alt="Logo" /> */}
-      <img src="/images/NavBar/logo.png"className='logo-img' alt="logo" />
-      <div className="mail">
-      <div className="contact-details">
-        <CgMail className='icon-customization'/>
-        <div className="mail-details">
-          <span>Send your mail</span>
-          <span>abhi@gmail.com</span>
+        {/* <img src={data.logo[0].logoImgurl} className="logo-img" alt="Logo" /> */}
+        <img src="/images/NavBar/logo.png" className='logo-img' alt="logo" />
+        <div className="mail">
+          <div className="contact-details">
+            <CgMail className='icon-customization' />
+            <div className="mail-details">
+              <span>Send your mail</span>
+              <span>abhi@gmail.com</span>
+            </div>
+          </div>
+          <div className="contact-details">
+            <BiPhoneCall className='icon-customization' />
+            <div className="mail-details">
+              <span>Send your mail</span>
+              <span>abhi@gmail.com</span>
+            </div>
+          </div>
+          <div className="contact-details">
+            <SlLocationPin className='icon-customization' />
+            <div className="mail-details">
+              <span>Send your mail</span>
+              <span>abhi@gmail.com</span>
+            </div>
+          </div>
         </div>
       </div>
-      <div className="contact-details"> 
-        <BiPhoneCall className='icon-customization'/>
-        <div className="mail-details">
-          <span>Send your mail</span>
-          <span>abhi@gmail.com</span>
-        </div>
+      <hr className='hr-size' ></hr>
+      <div>
+        <NavBar />
       </div>
-      <div className="contact-details">
-        <SlLocationPin className='icon-customization'/>
-        <div className="mail-details">
-          <span>Send your mail</span>
-          <span>abhi@gmail.com</span>
-        </div>
-      </div>
-      </div>
-      </div>
-<div>
-  {/* <NavBar/> */}
-</div>
     </div>
   )
 }
