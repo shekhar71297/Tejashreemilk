@@ -445,6 +445,15 @@
         display: flex;
         flex-direction: column;
     }
+
+    .right-main:hover .hover-content ,
+.left-main:hover .hover-content {  
+       
+      top: 70%;
+      left: 35%;
+      
+  }
+  
   }
   
   
