@@ -115,11 +115,21 @@ function AboutUs() {
             alt={galleryOne.leftMain.img.alt}
             data-aos="fade-up"
           />
+          <div className="hover-content"  >
+          <h1>Dairy farm</h1>
+          <span>view detail photo</span>
+
+          </div>
         </div>
         <div className="left-sub">
           {galleryOne.leftSub.map((subItem) => (
             <div className={subItem.className} key={subItem.id}>
               <img src={subItem.img.src} alt={subItem.img.alt} data-aos="fade-up" />
+              <div className="hover-content"  >
+          <h1>Dairy farm</h1>
+          <span>view detail photo</span>
+
+          </div>
             </div>
           ))}
         </div>
@@ -129,6 +139,11 @@ function AboutUs() {
           {galleryTwo.rightSub.map((subItem) => (
             <div className={subItem.className} key={subItem.id}>
               <img src={subItem.img.src} alt={subItem.img.alt} data-aos="fade-up"/>
+              <div className="hover-content"  >
+          <h1>Dairy farm</h1>
+          <span>view detail photo</span>
+
+          </div>
             </div>
           ))}
         </div>
@@ -138,6 +153,11 @@ function AboutUs() {
             alt={galleryTwo.rightMain.img.alt}
             data-aos="fade-up"
           />
+           <div className="hover-content"  >
+          <h1>Dairy farm</h1>
+          <span>view detail photo</span>
+
+          </div>
         </div>
       </div>
     </Container>

@@ -281,7 +281,7 @@ function Home() {
       </div>
 
 
-
+<HomeService/>
 
       <div className='about-section'  data-aos="fade-up">
         <Container>

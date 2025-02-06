@@ -10,6 +10,8 @@ import PageTitle from '../../common/pageTitle/PageTitle'
  
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import NavBar from "../../common/NavBar/NavBar";
+import Landing from "../landingPage/Landing";
 
 function Contact() {
    useEffect(() => {
@@ -19,6 +21,8 @@ function Contact() {
     }, []);
   return (
     <div>
+      <Landing/>
+ 
       {/* <Landing/> */}
     <PageTitle title={"Contact Us"} description={"Get In Touch"}/>
       {/* contactUs form */}
