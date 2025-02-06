@@ -80,8 +80,8 @@ function NavBar() {
             <Nav className="me-aut">
               <Link className={`nav-link ${location.pathname === '/' ? 'active' : ''}`} to="/">Home</Link>
               <Link className={`nav-link ${location.pathname === '/about-us' ? 'active' : ''}`} to="/about-us">About</Link>
-              <Link className={`nav-link ${location.pathname === '/services' ? 'active' : ''}`} to="/services">Services</Link>
-              
+              {/* <Link className={`nav-link ${location.pathname === '/services' ? 'active' : ''}`} to="/services">Services</Link> */}
+              <Link className={`nav-link ${location.pathname === '/contact-us' ? 'active' : ''}`} to="/contact-us">Contact</Link>
             </Nav>
           </Navbar.Collapse>
         </div>

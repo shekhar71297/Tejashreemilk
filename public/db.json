@@ -23,19 +23,19 @@
     "id":1,
     "title": "Automation Technologies",
     "description": "Suspendisse viverra est quis iaculis venenatis. Vestibulum sollicitudin.",
-    "icon": "🌱"
+    "icon": "/images/home/operational-system.png"
   },
   {
     "id":2,
     "title": "Animal Nutrition",
     "description": "Suspendisse viverra est quis iaculis venenatis. Vestibulum sollicitudin.",
-    "icon": "🐄"
+    "icon": "/images/home/cat-food.png"
   },
   {
     "id":3,
     "title": "Natural Products",
     "description": "Suspendisse viverra est quis iaculis venenatis. Vestibulum sollicitudin.",
-    "icon": "🥛"
+    "icon": "/images/home/nature-product.png"
   }
 ],
 

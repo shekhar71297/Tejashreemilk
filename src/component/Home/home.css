@@ -555,7 +555,7 @@ color: #F8AB13;
 }
 
 .icon {
-  font-size: 40px;
+max-width: 40%;
   margin: 15px auto;
 }
 
@@ -569,3 +569,4 @@ font-weight: bold !important ;
   color: #7A7A7A !important;
 
 }
+

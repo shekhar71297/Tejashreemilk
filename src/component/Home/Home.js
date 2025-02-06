@@ -10,13 +10,11 @@ import { GrCertificate } from "react-icons/gr";
 import { GrUserWorker } from "react-icons/gr";
 import { FaRupeeSign } from "react-icons/fa";
 import { TiArrowRight } from "react-icons/ti";
+
 import "./home.css";
 import { Image } from "react-bootstrap";
 import { WebContext } from "../../App";
 import { Card, Container, Row, Col, Button } from "react-bootstrap";
-
-
-
 // import NavBar from '../../common/NavBar/NavBar'
 import Landing from "../landingPage/Landing";
 // import Contact from '../ContactUs/Contact'
@@ -32,15 +30,14 @@ function Home() {
   const data = useContext(WebContext);
   const nav = useNavigate()
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+  const [cardStyle, setCardStyle] = useState({});
   useEffect(() => {
     AOS.init({
-      duration: 1000, // Animation duration in milliseconds
+      duration: 1000, // Animation duration (1 second)
+      once: true, // Ensures animation happens only once
+      easing: "ease-out", // Smooth animation effect
     });
   }, []);
-
-
-  const [cardStyle, setCardStyle] = useState({});
-
   useEffect(() => {
     const updateStyle = () => {
       if (window.innerWidth < 575) {
@@ -122,9 +119,9 @@ function Home() {
       {data?.home?.map((val, index) => (
         <div className="image-container">
           <Image src={val.logoImgurl} fluid />
-          <div className="card-overlay">
+          <div className="card-overlay"  >
             {/* If you want to show a card overlay on the image */}
-            <Container className="mt-4" data-aos="fade-up">
+            <Container className="mt-4" data-aos="fade-up" >
               {data?.homevideo?.map((val, index) => (
                 <Card className="Card-body">
                   <Row className="g-0">
@@ -158,8 +155,8 @@ function Home() {
         </div>
       ))}
 
-      <section className="cow-section"  >
-        <Container>
+      <section className="cow-section"    >
+        <Container data-aos="fade-up" >
           <div className="cow-content">
             {/* Image Section */}
 
@@ -222,7 +219,7 @@ function Home() {
         </Container>
       </section>
 
-      <div className='record-section' >
+      <div className='record-section'  data-aos="fade-up" >
         <Container className="mt-4">
           {/* Card Container */}
           <Card className="record-card">
@@ -286,7 +283,7 @@ function Home() {
 
 
 
-      <div className='about-section'>
+      <div className='about-section'  data-aos="fade-up">
         <Container>
           <Row className="d-flex align-items-center">
             <Col md={8} className="position-relative">
@@ -315,7 +312,7 @@ function Home() {
         </Container>
       </div>
 
-      <div className="product-section">
+      <div className="product-section" data-aos="fade-up">
         <Container>
           <div className="product-heading">
             <h5 className="product-subheading">Our All Products</h5>
@@ -361,7 +358,7 @@ function Home() {
         <HomeService />
       </div> */}
 
-      <Container className="farm-section">
+      <Container className="farm-section" data-aos="fade-up">
         <Row className="align-items-center">
           {/* Left Section */}
           <Col md={5} className="text-section">
@@ -381,7 +378,9 @@ function Home() {
               {data?.programs?.map((program, index) => (
                 <Col key={index} md={4} sm={6} xs={12} className="mb-3">
                   <Card className="program-card text-center">
-                    <div className="icon">{program.icon}</div>
+                    <div>
+                      <img  className="icon" src={program?.icon} alt={program?.title} />
+                    </div>
                     <Card.Body>
                       <Card.Title className='program-title' >{program.title}</Card.Title>
                       <Card.Text className='program-content' >{program.description}</Card.Text>
