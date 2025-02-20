@@ -180,12 +180,10 @@ function Home() {
 
             {/* Content Section */}
             <div className="cow-text-box">
-              <h3 className="cow-about-title">About Us</h3>
-              <h2 className="cow-heading">Where Cows Roam and Milk Flows</h2>
+              <h3 className="cow-about-title">Our Founder</h3>
+              <h2 className="cow-heading">Vijay Brahmadev Shende</h2>
               <p className="cow-description">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus semper
-                placerat metus. Cras venenatis mi non purus dictum, non tincidunt ligula
-                varius.
+              Vijay Brahmadev Shende, a 4th-generation farmer, established Tejashree Milk with a vision to empower the farming community. His goal was to create a sustainable business model that would generate part-time income for local farmers while ensuring consumers receive the best quality milk. With deep roots in farming and a passion for delivering excellence, Vijay Shende leads the company with a commitment to tradition, innovation, and social responsibility.
               </p>
 
               <div className="cow-vision-mission">
@@ -193,9 +191,9 @@ function Home() {
                 <div className="cow-vision">
                   <h4 className="cow-subtitle">Our Vision</h4>
                   <ul className="cow-list">
-                    <li><span className='tick-color' >✔</span> Praesent Sodales Orci</li>
-                    <li><span className='tick-color' >✔</span> Curabitur Dignissim</li>
-                    <li><span className='tick-color' >✔</span> Nulla Condimentum</li>
+                    <li><span className='tick-color' >✔</span> Empower farmers.</li>
+                    <li><span className='tick-color' >✔</span> Build sustainability.</li>
+                    <li><span className='tick-color' >✔</span> Benefit farmers and consumers.</li>
                   </ul>
                 </div>
 
@@ -203,9 +201,9 @@ function Home() {
                 <div className="cow-mission">
                   <h4 className="cow-subtitle">Our Mission</h4>
                   <ul className="cow-list">
-                    <li><span className='tick-color' >✔</span> Nulla Condimentum</li>
-                    <li><span className='tick-color' >✔</span> Praesent Sodales Orci</li>
-                    <li><span className='tick-color' >✔</span> Curabitur Dignissim</li>
+                    <li><span className='tick-color' >✔</span>Provide quality milk.</li>
+                    <li><span className='tick-color' >✔</span>Support farmers’ income.</li>
+                    <li><span className='tick-color' >✔</span>Promote tradition and innovation.</li>
                   </ul>
                 </div>
               </div>

@@ -20,21 +20,22 @@ function Landing() {
             <CgMail className='icon-customization' />
             <div className="mail-details">
               <span>Send your mail</span>
-              <span>abhi@gmail.com</span>
+              <span>tejashreemilk3@gmail.com</span>
             </div>
           </div>
           <div className="contact-details">
             <BiPhoneCall className='icon-customization' />
             <div className="mail-details">
-              <span>Send your mail</span>
-              <span>abhi@gmail.com</span>
+              <span>Contact Us</span>
+              <span>+918390057002</span>
             </div>
           </div>
+       
           <div className="contact-details">
             <SlLocationPin className='icon-customization' />
             <div className="mail-details">
-              <span>Send your mail</span>
-              <span>abhi@gmail.com</span>
+              <span>Location</span>
+              <span>Indapur Road</span>
             </div>
           </div>
         </div>

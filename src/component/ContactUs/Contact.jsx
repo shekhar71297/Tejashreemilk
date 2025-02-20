@@ -41,7 +41,7 @@ function Contact() {
               <span className="icon-details">Our Location</span>
               </div>
             <div className="mail-info">
-              <span >abhi@gmail.com</span>
+              <span >Indapur Road, Maharashtra</span>
             </div>
           </div>
 
@@ -51,7 +51,7 @@ function Contact() {
               <span className="icon-details">Email Support</span>
               </div>
             <div className="mail-info">
-              <span>abhi@gmail.com</span>
+              <span>tejashreemilk3@gmail.com</span>
             </div>
           </div>
 
@@ -61,7 +61,7 @@ function Contact() {
               <span className="icon-details" data-aos="fade-in">Phone Number</span>
               </div>
             <div className="mail-info">
-              <span>abhi@gmail.com</span>
+              <span>+918390057002</span>
             </div>
           </div> 
 
@@ -71,35 +71,23 @@ function Contact() {
           <p className="contactUs-left-des">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi impedit vel alias fugit?</p>
         </div>
         <div className="right-form">
-
-        <div className="right-container">
-        <h1>Send Us A Message</h1>
-        <p>Please fill out the form below and our expert team will get back to you shortly.</p>
-        <form>
-            <div className="form-group half">
-                <label htmlFor="first-name">First Name *</label>
-                <input type="text" id="first-name" required placeholder="First name here"/>
+          <div className="right-container">
+            <h1>Find Us On The Map</h1>
+            <p>Find our location below</p>
+            
+            {/* Embed Google Map */}
+            <div className="map-container">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.448351698119!2d73.73510531426496!3d18.396157387489246!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2d45791e7a953%3A0x2d4f8b70e3d624df!2sIndapur%20Road%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1676232218397!5m2!1sen!2sin"
+                width="100%" 
+                height="400" 
+                style={{ border: 0 }} 
+                allowFullScreen="" 
+                loading="lazy" 
+                referrerPolicy="no-referrer-when-downgrade">
+              </iframe>
             </div>
-            <div className="form-group half">
-                <label htmlFor="last-name">Last Name *</label>
-                <input type="text" id="last-name" required placeholder="Second name here"/>
-            </div>
-            <div className="form-group half">
-                <label htmlFor="email">Email Address *</label>
-                <input type="email" id="email" required placeholder="Add email"/>
-            </div>
-            <div className="form-group half">
-                <label htmlFor="subject">Subject *</label>
-                <input type="text" id="subject" required placeholder="How can we help you?"/>
-            </div>
-            <div className="form-group">
-                <label htmlFor="comments">Comments / Questions *</label>
-                <textarea id="comments" rows="5" required placeholder="Comments"></textarea>
-            </div>
-            <button type="submit">Send Message</button>
-        </form>
-    </div>
-    
+          </div>
         </div>
       </Container>
        <FooterPage/>

@@ -17,46 +17,53 @@ function FooterPage() {
 	const data = useContext(WebContext);
 	const location = useLocation();
 	const currentYear = new Date().getFullYear();
-  const copyrightText = `© 2017-${currentYear} Tejashree Milk, All Rights Reserved.`;
+	const copyrightText = `© 2017-${currentYear} Tejashree Milk, All Rights Reserved.`;
 	useEffect(() => {
 		if (location.state && location.state.scrollToTop) {
 			window.scrollTo({ top: 0, behavior: "smooth" });
 		}
 	}, [location]);
-
-
+	const whatsappNumber = +918390057002
+	const message = "Hello, I would like to know more about your services!";
 	return (
 		<div>
 			<footer className="footer-body">
 				<Container>
 					<Row>
 						<Col md={4}  >
-              <div className="section1" >
-							<div className='about-heading'>
-								<div> </div>
-								<div>
-									<span className="footer-title" >{data?.footer?.sloganheading?.title}</span>
+							<div className="section1" >
+								<div className='about-heading'>
+									<div> </div>
+									<div>
+										<span className="footer-title" >{data?.footer?.sloganheading?.title}</span>
+									</div>
 								</div>
-							</div>
-							<div className="footer-content" >
-								<p>{data?.footer?.slogan}</p>
-							</div>
-              <div className="social-media">
-                <div>
-                <FaFacebookF className="social-icon" />
-                </div>
-                <div>
-                  <FaInstagramSquare className="social-icon" />
-                </div>
-                <div>
-                  <FaTwitter className="social-icon" />
-                </div>
-                <div>
-                <IoLogoWhatsapp className="social-icon" />
-                </div>
-              </div>
+								<div className="footer-content" >
+									<p>{data?.footer?.slogan}</p>
+								</div>
+								<div className="social-media">
+									<div>
+										<a href="https://www.facebook.com/profile.php?id=61573140993786" target="_blank" ><FaFacebookF className="social-icon" /></a>
+									</div>
+									<div>
+										<a href="https://www.instagram.com/tejashreemilk?igsh=MWo3dmx4dmdha3Jmaw==" target="_blank" > <FaInstagramSquare className="social-icon" /></a>
+									</div>
+									{/* <div>
+								<a href="https://www.facebook.com/profile.php?id=61573140993786" ><FaTwitter className="social-icon" /></a>
+                </div> */}
+									<div>
+										<a
+											target="_blank"
+											rel="noopener noreferrer"
+											className="whatsapp-icon"
+											href={`https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`}
+										>
+											<IoLogoWhatsapp className="social-icon" />
+											</a>
+									</div>
+								</div>
 
-              </div>
+							</div>
 						</Col>
 						<Col md={4} >
 							<div className="site-map-body" >
@@ -73,9 +80,10 @@ function FooterPage() {
 													className="site-map-links"
 													to={item.link}
 													state={{ scrollToTop: true }}
+
 												>
 													{/* Display the arrow icon and link text */}
-													 {item.name}
+													{item.name}
 												</Link>
 											</li>
 										</ul>
@@ -119,7 +127,7 @@ function FooterPage() {
 							</div>
 						</Col>
 					</Row>
-          <div className="footer-copyright" >
+					<div className="footer-copyright" >
 						<span>{copyrightText}</span>
 
 						{/* <span>{data?.footer?.subheading}</span> */}

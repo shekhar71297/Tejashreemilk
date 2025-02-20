@@ -471,6 +471,10 @@ color: #7A7A7A ;
     width: 100%;
     margin-bottom: 15px;
   }
+ 
+  .program-card {
+    padding: 0px !important;
+  }
 }
 
 @media (max-width: 600px) {

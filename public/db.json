@@ -74,9 +74,9 @@
     {
       "id": 1,
       "imgUrl": "/images/about/farm.jpg",
-      "subheading": "Our Advantages",
+      "subheading": "Commitment to Quality",
       "heading": "Unleash the Magic of Farm-Crafted Dairy",
-      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+      "content": "At Tejashree Milk, quality is our priority. We ensure the freshest milk reaches your doorstep by using advanced processes like same-day pasteurization and packaging, guaranteeing purity and freshness."
     }
   ],
   "homevideo": [
@@ -146,7 +146,7 @@
         },
         "paragraph": {
           "id": 8,
-          "text": "Curabitur faucibus orci a condimentum pretium. Pellentesque vel libero feugiat nibh cursus consequat vel eu lectus. Praesent eget ipsum blandit, tempus purus sed, vestibulum tellus. Nam laoreet massa semper est gravida tristique."
+          "text": " In the serene village of Nimgaonketki, Maharashtra, Tejashree Milk is a trusted name in the dairy industry. With our own factory and cows, we ensure same-day packaging and pasteurizing, guaranteeing fresh milk delivery to our vendors. Our production capacity of 10,000 liters per day allows us to meet the growing demands of our customers while maintaining premium quality."
         },
         "quote": {
           "id": 9,
@@ -293,7 +293,7 @@
     "social": [
       {
         "name": "Instagram",
-        "link": "https://www.instagram.com/hematite_infotech?igsh=ZDE3OTNnNzdjNnl4",
+        "link": "https://www.instagram.com/tejashreemilk?igsh=MWo3dmx4dmdha3Jmaw==",
         "icon": "FaInstagram"
       },
       {
@@ -303,18 +303,13 @@
       },
       {
         "name": "Facebook",
-        "link": "https://www.facebook.com/hematiteinfotech/",
+        "link": "https://www.facebook.com/profile.php?id=61573140993786",
         "icon": "FaFacebookF"
       },
       {
         "name": "WhatsApp",
         "link": "https://wa.link/he878r",
         "icon": "IoLogoWhatsapp"
-      },
-      {
-        "name": "YouTube",
-        "link": "http://www.youtube.com/@hematiteinfotech1569",
-        "icon": "FaYoutube"
       }
     ],
     "siteMap": {
@@ -329,26 +324,18 @@
           "link": "/about-us"
         },
         {
-          "name": "Services",
-          "link": "/services"
-        },
-        {
-          "name": "Courses",
-          "link": "/courses"
-        },
-        {
           "name": "Contact",
-          "link": "/contact"
+          "link": "/contact-us"
         }
       ]
     },
     "headOffice": {
       "title": "HEAD OFFICE",
-      "address": "2nd Floor, Mathura Nagar Housing Society, Near Janseva Sahakari Bank Chandan Nagar, Kharadi, Pune - 411014.",
-      "email": "contact@hematitecorp.com",
-      "phone": "+91 - 8263926309 / 8999639478"
+      "address": "Indapur Rd, Nimgaon Ketki, Maharashtra 413120, India",
+      "email": "tejashreemilk3@gmail.com",
+      "phone": "+91-8390057002"
     },
-    "subheading": "Web Design & Development by Hematite Infotech Pvt. Ltd."
+    "subheading": "Web Design & Development by Tejashreemilk PVT. Ltd."
   },
 
   "farmService": {
@@ -362,7 +349,7 @@
         "farmContentOne": {
           "span": {
             "dataAos": "fade-up",
-            "text": "Farm Services"
+            "text": "Our Farmers and Milk Collection"
           },
           "h1": {
             "dataAos": "fade-up",
@@ -372,15 +359,15 @@
         "farmContentTwo": [
           {
             "dataAos": "fade-up",
-            "text": "Maecenas tempor at tellus nec fermentum"
+            "text": "Steady income for local farmers."
           },
           {
             "dataAos": "fade-up",
-            "text": "Donec commodo maximus orci vel euismod"
+            "text": "Milk sourced from clean, natural environments."
           },
           {
             "dataAos": "fade-up",
-            "text": "Aliquam maximus vestibulum libero dignissim"
+            "text": "Pure, rural-produced milk for consumers."
           }
         ],
         "button": {
