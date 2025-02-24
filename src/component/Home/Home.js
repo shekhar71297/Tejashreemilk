@@ -172,10 +172,10 @@ function Home() {
                   />
                 )
               }
-              <div className="cow-overlay">
+              {/* <div className="cow-overlay">
                 <span className="cow-trusted-text">We Are Trusted Happy </span>
                 <span className="cow-clients-text">6000+ Clients</span>
-              </div>
+              </div> */}
             </div>
 
             {/* Content Section */}
@@ -324,8 +324,8 @@ function Home() {
                 <Card
                   style={{
                     width: "100%",
-                    backgroundColor: index % 2 === 0 ? "#103371" : "white", // Apply blue for odd cards
-                    color: index % 2 === 0 ? "white" : "#103371", // Change text color for odd cards
+                    backgroundColor: index % 2 === 0 ? "#248eb7" : "white", // Apply blue for odd cards
+                    color: index % 2 === 0 ? "white" : "#248eb7", // Change text color for odd cards
                   }}
                   className="product-card"
                 >

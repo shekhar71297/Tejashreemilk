@@ -82,8 +82,8 @@
   "homevideo": [
     {
       "id": 1,
-      "subtitle": "Farm Perfect Dairy",
-      "heading": "Welcome to our Dairy Paradise",
+      "subtitle": "Tejashree Milk",
+      "heading": "From Our Farms to Your Home  Freshness You Can Trust!",
       "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.",
       "videoUrl": "/images/home/video/farm_video.mp4"
     }
@@ -128,8 +128,8 @@
         "detail": {
           "id": 4,
           "className": "cow-farm-detail",
-          "text": "We Are Trusted Happy",
-          "span": "6000+ Client"
+          "text": "Tejashree",
+          "span": "Milk"
         }
       },
       "detailSection": {
@@ -152,7 +152,7 @@
           "id": 9,
           "className": "aboutUs-quote",
           "icon": "FaQuoteRight className='quote-style'",
-          "text": "Curabitur id sem sit amet nibh vulputate tincidunt in vitae erat. Morbi vehicula, purus quis lacinia vehicula, nunc nunc rutrum est, sit amet porta odio mi vulputate turpis. Proin at ex pharetra."
+          "text": "At Tejashree Milk, we believe in empowering our farmers while delivering the purest milk to our consumers. By combining traditional farming values with modern practices, we ensure quality at every step. Our mission is to provide farm-fresh milk that nurtures both the community and your family."
         },
         "signature": {
           "id": 10,
@@ -289,7 +289,7 @@
     "sloganheading": {
       "title": "ABOUT US"
     },
-    "slogan": "Hematite Infotech Pvt. Ltd, represents the highest level of competence and expertise in delivering technology training along with application development through multiple learning methodologies worldwide.",
+    "slogan": "Tejashree Milk, based in Nimgaonketki, Maharashtra, ensures fresh, high-quality milk with same-day packaging and pasteurization, producing 10,000 liters daily to meet growing demand.",
     "social": [
       {
         "name": "Instagram",

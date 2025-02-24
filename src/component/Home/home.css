@@ -35,15 +35,15 @@ height: 50%;
   color:#F8AB13 !important ;
 }
 .heading{
-  color: #103371;
-  font-size: 45px !important;
+  color: #248eb7;
+  font-size: 32px !important;
   font-family: 'Commissioner', sans-serif !important;
   font-weight: 700 !important ;
 }
 
 .know-btn{
 text-decoration: none;
-color:#3C86CB;
+color:#248eb7;
 font-size: 15px;
 }
 .content{
@@ -89,7 +89,7 @@ margin: 10px;
   margin: 0px 40px;
 }
 .achiev-title{
-  color: #103371;
+  color: #248eb7;
 }
 .product-section {
   margin-top: 100px;
@@ -98,7 +98,7 @@ margin: 10px;
 text-align: center;
 }
 .product-heading{
-  color: #103371;
+  color: #248eb7;
   font-size: 45px !important;
   font-family: 'Commissioner', sans-serif !important;
   font-weight: 700 !important ;
@@ -158,7 +158,7 @@ box-shadow: 0px 6px 17px #00000069;
 
 .about-heading{
 font-size: 30px;
-color: #103371;
+color: #248eb7;
 font-weight: 700;
 }
 .about-btn{
@@ -222,7 +222,7 @@ color: #7A7A7A ;
 .link-btn {
   display: inline-block;
   margin-top: 10px;
-  color: #007bff;
+  color: #248eb7;
   text-decoration: none;
   font-weight: bold;
 }
@@ -245,7 +245,7 @@ color: #7A7A7A ;
 }
 
 .heading {
-  color: #103371;
+  color: #248eb7;
   font-size: 30px !important;
 }
 .Card-body {
@@ -293,7 +293,7 @@ color: #7A7A7A ;
     padding-left: 20px;
 }
 .heading {
-  color: #103371;
+  color: #248eb7;
   font-size: 34px !important;
   font-family: 'Commissioner', sans-serif !important;
   font-weight: 700 !important;
@@ -391,7 +391,7 @@ color: #7A7A7A ;
 }
 
 .cow-heading {
-  color:#103371;
+  color:#248eb7;
   font-size: 45px;
   font-weight: bold;
   margin: 10px 0;
@@ -417,7 +417,7 @@ color: #7A7A7A ;
 .cow-subtitle {
   font-size: 18px;
   font-weight: bold;
-  color:#103371;
+  color:#248eb7;
 }
 
 .cow-list {
@@ -527,7 +527,7 @@ color: #F8AB13;
 
   .main-heading {
     font-weight: 700;
-    color: #103371;
+    color: #248eb7;
     font-size: 45px;
 }
 
@@ -564,7 +564,7 @@ max-width: 40%;
 }
 
 .program-title{
-color: #103371 !important;
+color: #248eb7 !important;
 font-family: 'Commissioner', sans-serif !important;
 font-size: 20px !important;
 font-weight: bold !important ;

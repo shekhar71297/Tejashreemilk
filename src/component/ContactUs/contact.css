@@ -28,13 +28,16 @@
  .left-form h1{
   font-size: 2.7;
   font-weight: 700;
+  color: #248eb7;
  }
 .contactUs-details{
   margin: 1rem 0rem;
+  color: #248eb7;
 }
 .contactUs-details .icon-details{
   font-size: 1.6rem;
   font-weight: 600;
+  color: #248eb7;
 }
 .contactUs-icon-name{
   display: flex;
@@ -46,6 +49,7 @@
   margin: 2rem 0rem;
   font-size: 1.2rem;
   font-weight: 600;
+  color: #248eb7;
 }
 
 /* right side */
@@ -60,9 +64,11 @@
 .right-container h1{
 font-size: 2.7rem;
 font-weight: 700;
+color: #248eb7;
 }
 .right-container p{
   margin: 1rem 0rem 2rem 0rem;
+  color: #248eb7;
 }
 .right-form form {
     display: flex;

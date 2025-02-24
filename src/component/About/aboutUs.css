@@ -16,7 +16,7 @@
     
 }
 .cow-farm-detail{
-    background: #103371;
+    background: #248eb7;
     color: white;
     width: 60%;
     padding: 1rem 1rem 1rem 2rem;
@@ -45,7 +45,7 @@
  
 
 .aboutUs-detail h1{
-    color: #103371;
+    color: #248eb7;
     font-weight: 700;
 }
 
@@ -68,7 +68,7 @@
 }
 .signature-div span{
     font-weight: 700;
-    color: #103371;
+    color: #248eb7;
 }
 
 .signature-div p{
@@ -136,7 +136,7 @@
 }
 
 .why-choose h1{
-    color: #103371;
+    color: #248eb7;
     font-weight: 700;
 }
  
@@ -179,7 +179,7 @@
 .checkbox span{
   font-size: 20px;
   font-weight: 600;
-  color: #103371;
+  color: #248eb7;
   margin-top: 5px ;
 }
 
@@ -229,7 +229,7 @@
 
 .gallery-name-title h2{
     font-weight: 700;
-    color: #103371;
+    color: #248eb7;
     font-size: 2.5rem;
 }
 
@@ -363,7 +363,7 @@
     justify-content: center;
     align-items: center;
     color: white;
-    background: #10337191;
+    background: #248eb791;
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
 }
@@ -385,7 +385,7 @@
     left: -150%;
     width: 135%;
     height: 200%;
-    background: #10337191;
+    background: #248eb791;
     transform: rotate(135deg);
     transition: all 0.6s ease;
     z-index: 1;

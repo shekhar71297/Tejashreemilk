@@ -28,11 +28,7 @@ function Contact() {
       {/* contactUs form */}
       <Container className="contact-container  ">
         <div className="left-form">
-          <span>For more Information</span>
           <h1  >Hey, Lets Talk</h1>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, error!
-          </p>
           <div className="contact-form">
 
           <div className="contactUs-details">
@@ -58,7 +54,7 @@ function Contact() {
           <div className="contactUs-details">
           <div className="contactUs-icon-name">
             <BiPhoneCall className="contactUs-icon" />
-              <span className="icon-details" data-aos="fade-in">Phone Number</span>
+              <span className="icon-details" >Phone Number</span>
               </div>
             <div className="mail-info">
               <span>+918390057002</span>
@@ -68,7 +64,7 @@ function Contact() {
           
           </div>
           <hr />
-          <p className="contactUs-left-des">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi impedit vel alias fugit?</p>
+          <p className="contactUs-left-des">Tejashree Milk in Nimgaonketki, Maharashtra delivers fresh, high-quality milk with same-day packaging, producing 10,000 liters daily.</p>
         </div>
         <div className="right-form">
           <div className="right-container">

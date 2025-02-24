@@ -1,10 +1,10 @@
 .footer-title {
-  font-weight: 500;
+  font-weight: 600;
   font-size: 18px;
   padding-left: 0px;
   position: relative;
   margin: 0 0 30px;
-  color: #fbfbfc;
+  color: rgb(8 38 88);
   border-bottom: 3px solid #218bbb;
 }
 
@@ -17,7 +17,7 @@ display: flex;
 flex-direction: row;
 }
 .social-icon{
-background-color: #507fe9;
+background-color: rgb(8 38 88);
 color: white;
 font-size: 40px;
 border-top-left-radius: 10px;
@@ -61,7 +61,8 @@ ul {
 .footer-content {
   font-size: 16px;
   margin-top: 20px;
-  color: #ffffff;
+  color: rgb(8 38 88);
+  font-weight: 500;
   text-align: justify;
 }
 
@@ -75,29 +76,31 @@ ul {
   max-width: 100px;
   text-align: left;
   text-decoration: none;
-  color: #fff;
+  color: rgb(8 38 88);
+  font-weight: 500;
   /* margin-left: 15px; */
   margin-top: 20px;
 }
 
 .site-map-links:hover {
-  color: #218bbb;
+  color: #fdfeff;
   transition: color 0.2s ease, background-color 0.2s ease;
 }
 
 .footer-icon {
   font-size: 18px;
   margin-right: 15px;
-  color: #ffffff;
+  color: rgb(8 38 88);
 }
 
 .footer-contact {
-  color: #fff;
+  color: rgb(8 38 88);
   text-align: justify;
   display: flex;
   flex-direction: row;
   font-size: 16px !important;
   font-weight: 400 ;
+  font-weight: 500;
 }
 
 .footer-email {
@@ -109,7 +112,8 @@ ul {
 }
 
 .footer-email a {
-  color: #fff;
+  color: rgb(8 38 88);
+  font-weight: 500;
   text-decoration: none;
 }
 
@@ -121,8 +125,9 @@ ul {
 }
 
 .footer-phone a {
-  color: #fff;
+  color: rgb(8 38 88);
   text-decoration: none;
+  font-weight: 500;
 }
 
 .address-body {
@@ -135,7 +140,7 @@ ul {
   justify-content: center;
   margin-top: 30px;
   /* justify-content: space-between; */
-  color: #ffffff;
+  color: rgb(8 38 88);
 
 }
 
@@ -153,12 +158,12 @@ ul {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      color: #ffffff;
+      color: rgb(8 38 88);
       font-size: 20px;
       text-align: center;
   }
   .footer-body{
- background-color: #103472 !important;
+ background-color: #248eb7 !important;
  background-image: none !important;
  background-size: 100% 100%;
   }
@@ -197,7 +202,7 @@ ul {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      color: #ffffff;
+      color: rgb(8 38 88);
       font-size: 12px;
       text-align: center;
   }
@@ -236,7 +241,7 @@ ul {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      color: #ffffff;
+      color: rgb(8 38 88);
       font-size: 12px;
       text-align: center;
   }
