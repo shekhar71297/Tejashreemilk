@@ -246,7 +246,7 @@ color: #7A7A7A ;
 
 .heading {
   color: #248eb7;
-  font-size: 30px !important;
+  font-size: 23px !important;
 }
 .Card-body {
   border-radius: 20px !important;
@@ -270,7 +270,7 @@ color: #7A7A7A ;
   border-bottom-right-radius: 0px !important; 
    border-top-right-radius: 0px !important; 
    border-radius: 20px !important;
-   margin-top: 20px !important;
+   margin-top: 45px !important;
 }
 .product-section {
   margin-top: 70px !important;
@@ -355,7 +355,7 @@ color: #7A7A7A ;
 }
 
 .cow-image {
-  max-width: 100%;
+  max-width: 90%;
   border-radius: 10px;
 }
 
@@ -511,11 +511,11 @@ color: #F8AB13;
 .farm-section {
   padding: 50px 0;
   margin-top: 100px;
-  margin-bottom: 100px;
 }
 
 .text-section {
   text-align: left;
+  margin-bottom: 20px;
 }
 
 .sub-heading {

@@ -33,7 +33,7 @@ function Home() {
   const [cardStyle, setCardStyle] = useState({});
   useEffect(() => {
     AOS.init({
-      duration: 1000, // Animation duration (1 second)
+      duration: 500, // Animation duration (1 second)
       once: true, // Ensures animation happens only once
       easing: "ease-out", // Smooth animation effect
     });
@@ -159,9 +159,6 @@ function Home() {
         <Container data-aos="fade-up" >
           <div className="cow-content">
             {/* Image Section */}
-
-
-
             <div className="cow-image-box">
               {
                 data?.ceo?.map((val) =>
@@ -279,7 +276,7 @@ function Home() {
       </div>
 
 
-<HomeService/>
+{/* <HomeService/> */}
 
       <div className='about-section'  data-aos="fade-up">
         <Container>

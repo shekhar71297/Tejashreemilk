@@ -58,14 +58,14 @@ function AboutUs() {
             <FaQuoteRight className="quote-style" />
             <p>{aboutUsData.detailSection.quote.text}</p>
           </div>
-          <div className={aboutUsData.detailSection.signature.className}>
+          {/* <div className={aboutUsData.detailSection.signature.className}>
             <img
               src={aboutUsData.detailSection.signature.img.src}
               alt={aboutUsData.detailSection.signature.img.alt}
             />
             <span>{aboutUsData.detailSection.signature.name}</span>
             <p>{aboutUsData.detailSection.signature.title}</p>
-          </div>
+          </div> */}
         </div>
       </Container>
       {/* why to choose us section */}

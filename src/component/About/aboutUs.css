@@ -1,8 +1,7 @@
 .aboutUs-container{
     display: flex;
-  
     justify-content: center;
-    padding: 3.5rem;
+    /* padding: 3.5rem; */
 }
 .aboutUs-left{
     display: flex
@@ -97,7 +96,7 @@
     }
 
     .aboutUs-detail h1 {
-        font-size: 3rem;
+        font-size: 28px;
     }
 
     .aboutUs-quote p {
@@ -419,6 +418,7 @@
 
   @media (max-width: 768px) {
     .left-sub {
+      display: flex;
       flex-direction: column;
       align-items: center;
     }

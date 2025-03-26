@@ -48,9 +48,9 @@
   
     .mail {
       display: flex;
-      justify-content: center;
-      width: 100%;
+      flex-direction: column;
     }
+
   
     .contact-details {
       flex-direction: row;

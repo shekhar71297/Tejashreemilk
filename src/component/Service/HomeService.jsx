@@ -45,7 +45,7 @@ function HomeService() {
                 {farmService.farmServiceInfo.farmServiceContent.farmContentOne.h1.text}
               </h1>
             </div>
-            <ul className="farm-content-two" data-aos ="fade-up">
+            <ul className="farm-content-two">
             {farmService.farmServiceInfo.farmServiceContent.farmContentTwo.map((item, index) => (
                 <li key={index}>
                   <FaCheck className="farm-check-icon" /> {item.text}
