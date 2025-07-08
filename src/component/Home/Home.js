@@ -73,7 +73,7 @@ function Home() {
         setCardStyle({
           position: 'absolute',
           top: '30%',
-          right: '-30%',
+          right: '-50%',
           width: '500px',
           height: '350px',
           padding: '40px',

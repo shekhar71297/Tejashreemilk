@@ -43,28 +43,28 @@
   "product": [
     {
       "id": 1,
-      "imgUrl": "/images/home/product1.png",
+      "imgUrl": "/images/home/product1.jpeg",
       "heading": "Fresh Milk",
       "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
       "price": "22"
     },
     {
       "id": 2,
-      "imgUrl": "/images/home/product1.png",
+      "imgUrl": "/images/home/product2.jpeg",
       "heading": "Fresh Milk",
       "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
       "price": "22"
     },
     {
       "id": 3,
-      "imgUrl": "/images/home/product1.png",
+      "imgUrl": "/images/home/product1.jpeg",
       "heading": "Fresh Milk",
       "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
       "price": "22"
     },
     {
       "id": 4,
-      "imgUrl": "/images/home/product1.png",
+      "imgUrl": "/images/home/product2.jpeg",
       "heading": "Fresh Milk",
       "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
       "price": "22"
@@ -121,7 +121,7 @@
           "id": 3,
           "className": "aboutUs-img",
           "img": {
-            "src": "https://templatekit.kulokale.com/moolydairy/wp-content/uploads/sites/13/elementor/thumbs/a-group-of-young-dairy-cows-outdoor-walking-in-a-f-resize-qb2pqvi2a1jcltssj6juunks8520hepbr1pd1hmf7g.jpg",
+            "src": "/images/about/TracingJourney.JPG",
             "alt": "cow farm"
           }
         },
@@ -172,7 +172,7 @@
           "id": 1,
           "className": "left-main eihe-box eihe-shutter-in",
           "img": {
-            "src": "https://templatekit.kulokale.com/moolydairy/wp-content/uploads/sites/13/2023/08/cows-on-a-diary-farm-agriculture-industry-resize.jpg",
+            "src": "/images/about/gallary (1).jpg",
             "alt": "whyChooseim"
           }
         },
@@ -181,7 +181,7 @@
             "id": 2,
             "className": "eihe-box eihe-shutter-in",
             "img": {
-              "src": "https://templatekit.kulokale.com/moolydairy/wp-content/uploads/sites/13/2023/08/one-of-milk-cows-in-cowshed-touching-hand-of-male-resize.jpg",
+              "src": "/images/about/gallary (2).jpg",
               "alt": ""
             }
           },
@@ -189,7 +189,7 @@
             "id": 3,
             "className": "eihe-box eihe-shutter-in",
             "img": {
-              "src": "https://templatekit.kulokale.com/moolydairy/wp-content/uploads/sites/13/2023/08/one-of-milk-cows-in-cowshed-touching-hand-of-male-resize.jpg",
+              "src": "/images/about/gallary (3).jpg",
               "alt": ""
             }
           }
@@ -201,7 +201,7 @@
             "id": 4,
             "className": "eihe-box eihe-shutter-in",
             "img": {
-              "src": "https://templatekit.kulokale.com/moolydairy/wp-content/uploads/sites/13/2023/08/one-of-milk-cows-in-cowshed-touching-hand-of-male-resize.jpg",
+              "src": "/images/about/gallary (6).jpg",
               "alt": ""
             }
           },
@@ -209,7 +209,7 @@
             "id": 5,
             "className": "eihe-box eihe-shutter-in",
             "img": {
-              "src": "https://templatekit.kulokale.com/moolydairy/wp-content/uploads/sites/13/2023/08/one-of-milk-cows-in-cowshed-touching-hand-of-male-resize.jpg",
+              "src": "/images/about/gallary (4).jpg",
               "alt": ""
             }
           }
@@ -218,7 +218,7 @@
           "id": 6,
           "className": "right-main eihe-box eihe-shutter-in",
           "img": {
-            "src": "https://templatekit.kulokale.com/moolydairy/wp-content/uploads/sites/13/2023/08/cows-on-a-diary-farm-agriculture-industry-resize.jpg",
+            "src": "/images/about/gallary (5).jpg",
             "alt": "whyChooseim"
           }
         }
@@ -278,7 +278,7 @@
         "id": 9,
         "className": "why-choose-img",
         "img": {
-          "src": "https://templatekit.kulokale.com/moolydairy/wp-content/uploads/sites/13/2023/08/cows-on-a-diary-farm-agriculture-industry-resize.jpg",
+          "src": "/images/about/UnleashFarm.JPG",
           "alt": "whyChooseim"
         }
       }
